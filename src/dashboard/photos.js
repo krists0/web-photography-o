@@ -1,0 +1,51 @@
+export const photos = [
+ 
+  {
+    src: require(`../images/ariel.jpg`).default,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/ariel1.jpg`).default,
+    width: 1,
+    height: 1
+  },
+  {
+    src: require(`../images/IMG_6191.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src: require(`../images/madgirl.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src:  require(`../images/babyboy2.jpg`).default,
+    width: 3,
+    height: 4,
+    
+  },
+  
+  {
+    src: require(`../images/IMG_2037.jpg`).default,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/1.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src: require(`../images/IMG_6147.jpg`).default ,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/babyboy.jpg`).default,
+    width: 4,
+    height: 3
+  },
+ 
+];
