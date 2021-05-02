@@ -16,7 +16,7 @@ import Galery from "../dashboard/Galery";
 import Mehiron from "../dashboard/Mehiron";
 import Album from "../dashboard/Albums";
 import AddAlbums from "./AddAlbums";
-
+import back from "../images/fam.jpg";
 import '../react-slideshow-image/styles.css';
 
 
@@ -118,7 +118,7 @@ class HomeP extends Component {
         </AppBar>
 
         <AppBar color="primary"  position="static" elevation={0} style={{
-          backgroundImage: "url(" +"https://i.ibb.co/1RdpSPL/backgro.jpg"+ ")",
+          backgroundImage:`url(${back})`,
          /** position: "relative",**/
         
           width: "100%",
