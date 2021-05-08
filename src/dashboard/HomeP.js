@@ -95,7 +95,7 @@ class HomeP extends Component {
 
     return (
         <div   style={{background:'#fff5e6',}} >
-        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'fixed'}}
+        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'flex'}}
 
 >
 
@@ -134,7 +134,7 @@ class HomeP extends Component {
                 {value === 3 && <TabContainer><Galery/></TabContainer>}
                 {value === 2 && <TabContainer ><Mehiron/></TabContainer>}
                 {value === 1 && <TabContainer><Album/></TabContainer>}
-                {value === 0 && <TabContainer><Contact/></TabContainer>}
+                {value === 0 && <TabContainer ><Contact/></TabContainer>}
                
                
 
@@ -145,13 +145,14 @@ class HomeP extends Component {
         
     </div>
 
-            <MadeWithLove/>
+           
 
             <div className="row">
             <div className="landing-copy col s12 center-align">
                 
             </div>
             </div>
+            <MadeWithLove/>
   </div>
       
     );

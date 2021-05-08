@@ -8,13 +8,13 @@ import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, M
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import GridList from '@material-ui/core/GridList';
-
+import { BrowserView, MobileView } from 'react-device-detect';
 
 import profile from "../images/profile.jpg";
 
 import Card from '@material-ui/core/Card';
 import styles from "../material-kit-react/profilePage";
-import SliderContact from "./SliderContact";
+
 
 import Typography from '@material-ui/core/Typography';
 import Videoplay from "./Videoplay";
@@ -23,6 +23,7 @@ import { Link } from "react-router-dom";
 import about from "../images/about.jpg";
 import CarouselPage from "./CarouselPage";
 import StudioAbout from "./StudioAbout";
+import CarouselPageMobile from "./CaruselPageMobile";
 
 
 
@@ -48,7 +49,7 @@ export default function Contact(props) {
   }
 
   return (
-    <div style={{left:"30%"}}>
+    <div >
 
       <div small filter image={require("../images/profile.jpg")}
 
@@ -56,7 +57,7 @@ export default function Contact(props) {
       {/**this is the description part */}
       <div className={classNames(classes.main, classes.mainRaised)}>
 
-        <div className={classes.container}>
+        <div >
           <Grid justify="center">
             <Grid xs={12} sm={12} md={6}>
               <div className={classes.profile}  >
@@ -64,8 +65,15 @@ export default function Contact(props) {
                   <img src={profile} alt="..." className={imageClasses} />
                 </div>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>אורטל כהן</h3>
-                  <h4>צלמת ילדים,משפחה,ניו-בורן וסמאש קייק</h4>
+                  <h3 className={classes.title}
+                    style={{
+                      top: "20px",
+                      transform: "translate3d(0, -85%, 0)",
+                    }}
+                  >אורטל כהן</h3>
+                  <h4
+                    style={{ transform: "translate3d(0, -50%, 0)", }}
+                  >צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
 
                   <Button onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} justIcon link className={classes.margin5}>
                     <i className={"fab fa-instagram"} />
@@ -83,7 +91,7 @@ export default function Contact(props) {
               flexGrow: "1",
 
               maxWidth: "600px",
-              height: "1400px",
+            
               overflow: 'hidden',
             }}
 
@@ -123,16 +131,24 @@ export default function Contact(props) {
 
 
         <div style={{
-          width: "20%", height: "40%",
+          width: "20%", 
           position: "absolute",
-         
+
           top: "0",
           left: "60px",
         }}>
+         
+          <BrowserView>
 
-          <CarouselPage />
+            <CarouselPage />
+          </BrowserView>
+
+
         </div>
-
+        <MobileView >
+          <div style={{ backgroundColor: "#efefef",}}><CarouselPageMobile style={{ backgroundColor: "#efefef",}}/></div>
+            
+          </MobileView>
 
       </div>
 
