@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
-import MehirN from './MehirN';
+
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -320,7 +320,7 @@ class Mehironim extends React.Component {
                             if (el.name=="NEWBORN" && el.isActive) {
                             return (
                                 <Grid style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
@@ -357,7 +357,7 @@ class Mehironim extends React.Component {
                             } else if (el.name=="2-6"&& el.isActive) {
                             return (
                                 <Grid style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
@@ -413,7 +413,7 @@ class Mehironim extends React.Component {
                             } else if(el.name=="6-9"&& el.isActive){
                             return (
                                 <Grid  style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
@@ -470,7 +470,7 @@ class Mehironim extends React.Component {
                         } else if(el.name=="ONE"&& el.isActive){
                             return (
                                 <Grid style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
@@ -533,7 +533,7 @@ class Mehironim extends React.Component {
                         } else if(el.name=="OPEN"&& el.isActive){
                             return (
                                  <Grid style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
@@ -590,7 +590,7 @@ class Mehironim extends React.Component {
                         } else if(el.name=="PRE"&& el.isActive){
                             return (
                                 <Grid style={{ maxWidth: 1600,
-                                    height:"800px",
+                                    height:"900px",
                                     width:"1480px",
                                     top:"70%",
                                     position:"absolute",
