@@ -25,6 +25,7 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import DialogconMobile from './DialogconMobile';
 
 
 const styles = (theme) => ({
@@ -107,7 +108,8 @@ class MehironimMobile extends React.Component {
 
             <div>
                 <Grid>
-                    <div style={{ width: "100%", height: "200px", }}>
+                    <div style={{ 
+                                                    }}>
                         <img src={titme} alt="מחירון" style={{ width: "100%", justify: "center", position: "flex", backgroundImage: "cover" }} />
                     </div>
 
@@ -691,7 +693,7 @@ class MehironimMobile extends React.Component {
 
                 <CardActions>
 
-                    <Dialogcon />
+                    <DialogconMobile></DialogconMobile>
                 </CardActions>
 
             </div>

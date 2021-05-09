@@ -75,12 +75,6 @@ export default function Contact(props) {
                     style={{ transform: "translate3d(0, -50%, 0)", }}
                   >צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
 
-                  <Button onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} justIcon link className={classes.margin5}>
-                    <i className={"fab fa-instagram"} />
-                  </Button>
-                  <Button onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} justIcon link className={classes.margin5}>
-                    <i className={"fab fa-facebook"} />
-                  </Button>
                 </div>
               </div>
             </Grid>
