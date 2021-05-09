@@ -146,7 +146,7 @@ export default function Contact(props) {
 
         </div>
         <MobileView >
-          <div style={{ backgroundColor: "#efefef",}}><CarouselPageMobile style={{ backgroundColor: "#efefef",}}/></div>
+         <CarouselPageMobile  />
             
           </MobileView>
 
