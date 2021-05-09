@@ -96,7 +96,7 @@ class HomeP extends Component {
 
     return (
         <div   style={{background:'#fff5e6',}} >
-        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'flex'}}
+        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'fixed'}}
 
 >
 
