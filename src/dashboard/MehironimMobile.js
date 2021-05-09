@@ -333,7 +333,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top:"290%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
