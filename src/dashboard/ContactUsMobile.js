@@ -8,7 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBInput } from 'mdbreact';
 import titmeh from "../images/tit.jpg";
 
-export default function ContactUs() {
+export default function ContactUsMobile() {
 
   function sendEmail(e) {
     e.preventDefault();
@@ -29,7 +29,7 @@ export default function ContactUs() {
     <div style={{position:"flex"}}>
 
       <section className="contact-section my-5" >
-        <MDBCard style={{ width: "1450px" }}>
+        <MDBCard style={{ width: "100%" }}>
           <MDBRow>
             <MDBCol lg="8">
               <MDBCardBody className="form">
@@ -99,7 +99,7 @@ export default function ContactUs() {
                   <li>
                     <p>
 
-                      <h4>Ortalcohen.p@gmail.com</h4>
+                      <h6>Ortalcohen.p@gmail.com</h6>
                     </p>
                   </li>
                 </ul>

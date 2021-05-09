@@ -16,8 +16,8 @@ import madgirl from "../images/madgirl.jpg";
 
 const CarouselPageMobile = () => {
   return (
-      <div >
-    <MDBContainer  style={{position:"absolute",top:"1700px",width:"250px",}}>
+      <div justify="center">
+    <MDBContainer  style={{position:"flex",top:"1670px",width:"100%", background:'#fff5e6', backgroundSize:" cover"}}>
         <h5 style={{textAlign:"right",color:"#b2a57d"}}>צילומי ניו בורן</h5>
       <MDBCarousel
        
@@ -27,7 +27,7 @@ const CarouselPageMobile = () => {
         showIndicators={true}
         className="z-depth-1"
       >
-        <MDBCarouselInner>
+        <MDBCarouselInner >
           <MDBCarouselItem itemId="1">
             <MDBView>
               <img

@@ -18,6 +18,7 @@ import Album from "../dashboard/Albums";
 import AddAlbums from "./AddAlbums";
 import back from "../images/fam.jpg";
 import '../react-slideshow-image/styles.css';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 
 import Contact from "./Contact";
@@ -147,11 +148,7 @@ class HomeP extends Component {
 
            
 
-            <div className="row">
-            <div className="landing-copy col s12 center-align">
-                
-            </div>
-            </div>
+            
             <MadeWithLove/>
   </div>
       
