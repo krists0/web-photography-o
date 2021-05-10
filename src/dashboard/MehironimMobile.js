@@ -108,8 +108,8 @@ class MehironimMobile extends React.Component {
 
             <div>
                 <Grid>
-                    <div style={{ 
-                                                    }}>
+                    <div style={{
+                    }}>
                         <img src={titme} alt="מחירון" style={{ width: "100%", justify: "center", position: "flex", backgroundImage: "cover" }} />
                     </div>
 
@@ -138,7 +138,7 @@ class MehironimMobile extends React.Component {
 
                                             <img
                                                 title="mehiron 0-3"
-                                                src={require(`../images/IMG_9332.jpg`).default}
+                                                src={require(`../images/elon2.jpg`).default}
                                                 style={{
 
                                                     borderWidth: 1,
@@ -288,7 +288,7 @@ class MehironimMobile extends React.Component {
                                 }
                                 else if (el.name == "PRE") {
                                     return (
-                                        <div> <img src={require(`../images/ariel2.jpg`).default}
+                                        <div> <img src={require(`../images/preg.jpg`).default}
                                             style={{
 
                                                 alignItems: 'center',
@@ -333,7 +333,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"290%",
+                                        top: "290%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -347,18 +347,38 @@ class MehironimMobile extends React.Component {
                                             alignContent: 'center',
                                             alignItems: 'center'
                                         }}>
-                                            <img src={require(`../images/IMG_9332.jpg`).default} width="100%" />
+                                            <img src={require(`../images/elon2.jpg`).default} width="100%" />
 
                                             <CardContent>
 
                                                 <Typography gutterBottom variant="h5" component="h2">
-                                                    מחירון ני בורן
+                                                    מחירון נוי בורן
                                     </Typography>
                                                 <Typography
 
                                                     variant="body2" color="textSecondary" component="p">
 
-                                                    <h1> נעדכן בקרוב ...</h1>
+                                                    <h3>חבילה בסיסית - 500 ש"ח</h3>
+צילום התינוק/ת בלבד
+משך זמן צילום : כשעתיים
+שני סטים של צילומים עם אביזרים מתחלפים
+החלפה של שני פרטי לבוש
+כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+<Divider variant="inset" component="li" />
+
+
+                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
+            צילום התינוק/ת + הורים
+משך זמן צילום: כ-3  שעות
+3 סטים של צילומים עם אביזרים מתחלפים
+החלפה של 3 פרטי לבוש
+כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה
+<Divider variant="inset" component="li" />
+                                                    <h3>תוספות</h3>
+
+            * אח בתוספת 100 ש"ח לכל חבילה.
+* חומר גלם לא נשלח.
+* אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
                                                 </Typography>
                                             </CardContent>
                                         </CardActionArea>
@@ -375,7 +395,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top: "300%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -435,7 +455,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top: "300%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -496,7 +516,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top: "300%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -563,7 +583,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top: "300%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -624,7 +644,7 @@ class MehironimMobile extends React.Component {
                                     <Grid style={{
                                         width: "88%",
                                         height: "233%",
-                                        top:"300%",
+                                        top: "300%",
                                         backgroundSize: " cover",
                                         transform: "translate3d(0, -95%, 0)",
                                         position: "absolute",
@@ -637,7 +657,7 @@ class MehironimMobile extends React.Component {
                                             alignContent: 'center',
                                             alignItems: 'center'
                                         }}>
-                                            <img src={require(`../images/family.jpg`).default} width="100%" />
+                                            <img src={require(`../images/preg.jpg`).default} width="100%" />
 
                                             <CardContent>
 
@@ -650,29 +670,29 @@ class MehironimMobile extends React.Component {
 
 
                                                     <h3>חבילה בסיסית - 500 ש"ח</h3>
-                                     מיקום :סטודיו או צילומי חוץ לבחירה
-                                        צילום ההריונית בלבד
-                                        משך זמן צילום : שעה
-                                        שני סטים של צילומים עם ביגוד מתחלף
-                                        כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                        <Divider variant="inset" component="li" />
+                                                    מיקום :סטודיו או צילומי חוץ לבחירה
+                                                        צילום ההריונית בלבד
+                                                        משך זמן צילום : שעה
+                                                        שני סטים של צילומים עם ביגוד מתחלף
+                                                        כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+                                                        <Divider variant="inset" component="li" />
 
 
-                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
-                                        מיקום :סטודיו או צילומי חוץ לבחירה
-                                        צילום ההריונית ובן הזוג.
-                                        משך זמן צילום: עד שעה
-                                        3 סטים של צילומים עם ביגוד מתחלף
-                                        כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+                                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
+                                                        מיקום :סטודיו או צילומי חוץ לבחירה
+                                                        צילום ההריונית ובן הזוג.
+                                                        משך זמן צילום: עד שעה
+                                                        3 סטים של צילומים עם ביגוד מתחלף
+                                                        כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset" component="li" />
 
-                                                    <h3>תוספות</h3>
+                                                                    <h3>תוספות</h3>
 
-                                            * ילד בתוספת 100 ש"ח לכל חבילה.
-                                            * חומר גלם לא נשלח.
-                                            * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
+                                                            * ילד בתוספת 100 ש"ח לכל חבילה.
+                                                            * חומר גלם לא נשלח.
+                                                            * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
                                        </Typography>
                                             </CardContent>
                                         </CardActionArea>

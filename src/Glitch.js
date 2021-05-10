@@ -14,7 +14,7 @@ const Glitch = () => {
     const call = async () => {
         console.log("call func");
       const response = await axios.get(
-        "https://google-photos-album-demo2.glitch.me/zse7xeNgXDs8MZnV6"
+        "https://google-photos-album-demo2.glitch.me/PkFtaDyoPpqTNih19"
       );
       if (!shouldCancel && response.data && response.data.length > 0) {
         setImages(

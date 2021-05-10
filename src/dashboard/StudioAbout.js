@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBIcon, MDBView, MDBBtn } from 'mdbreact';
-import studio from "../images/logo1.jpg";
+import studio from "../images/studio(2).jpg";
+import { BrowserView, MobileView } from 'react-device-detect';
 const StudioAbout = () => {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -10,9 +11,15 @@ const StudioAbout = () => {
     <MDBRow>
       <MDBCol style={{ maxWidth: "40rem" }}>
         <MDBCard reverse>
+          <MobileView>
+          <MDBCardImage cascade style={{ height: '10rem' }} src={studio} />
+          </MobileView>
+          <BrowserView>
           <MDBCardImage cascade style={{ height: '23rem' }} src={studio} />
+          </BrowserView>
+          
           <MDBCardBody cascade className="text-center">
-            <MDBCardTitle>הסטודיו שלי </MDBCardTitle>
+            <MDBCardTitle style={{color:"#442703"}}>הסטודיו שלי </MDBCardTitle>
             <h5 ><strong>ממוקם בירוחם</strong></h5>
             <MDBCardText>
 

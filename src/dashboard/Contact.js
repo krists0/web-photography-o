@@ -64,32 +64,39 @@ export default function Contact(props) {
                 <div>
                   <img src={profile} alt="..." className={imageClasses} />
                 </div>
-                <div className={classes.name}>
-                  <h3 className={classes.title}
-                    style={{
-                      top: "20px",
-                      transform: "translate3d(0, -85%, 0)",
-                    }}
-                  >אורטל כהן</h3>
-                  <h4
-                    style={{ transform: "translate3d(0, -50%, 0)", }}
-                  >צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
+                <BrowserView>
+                  <div className={classes.name}>
+                    <h3 className={classes.title}
+                      style={{
+                        top: "20px",
+        
+                      }}
+                    >אורטל כהן</h3>
+                    <h4>צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
+                  </div>
+                </BrowserView>
 
-                </div>
+
               </div>
             </Grid>
           </Grid>
+          
           <div className={classes.description}
 
             style={{
-              flexGrow: "1",
-
+             
+              flexGrow: "1",            
               maxWidth: "600px",
-            
               overflow: 'hidden',
             }}
 
           >
+            
+            <MobileView >
+              
+              <h4 style={{marginTop:"80px",color:"#462803"}} >אורטל כהן</h4>
+              <h5 style={{color:"#462803"}}>צלמת הריון, ניו בורן,ילדים ומשפחה </h5>
+            </MobileView>
             <h2>אודות</h2>
             <p>
 
@@ -125,13 +132,13 @@ export default function Contact(props) {
 
 
         <div style={{
-          width: "20%", 
+          width: "20%",
           position: "absolute",
 
           top: "0",
           left: "60px",
         }}>
-         
+
           <BrowserView>
 
             <CarouselPage />
@@ -140,9 +147,9 @@ export default function Contact(props) {
 
         </div>
         <MobileView >
-         <CarouselPageMobile  />
-            
-          </MobileView>
+          <CarouselPageMobile />
+
+        </MobileView>
 
       </div>
 
