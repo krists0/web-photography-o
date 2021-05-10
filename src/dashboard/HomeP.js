@@ -1,29 +1,22 @@
 import React, { Component } from "react";
 
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
-
-import { withStyles } from '@material-ui/core/styles';
-
 import Typography from '@material-ui/core/Typography';
 import Link from "@material-ui/core/Link";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-
 import AppBar from '@material-ui/core/AppBar';
-
 import Galery from "../dashboard/Galery";
 import Mehiron from "../dashboard/Mehiron";
 import Album from "../dashboard/Albums";
 import AddAlbums from "./AddAlbums";
 import back from "../images/fam.jpg";
 import '../react-slideshow-image/styles.css';
-import { BrowserView, MobileView } from 'react-device-detect';
+
 
 
 import Contact from "./Contact";
-import MehironDash from "./MehironDash";
-import Music from "./Music";
+
 function TabContainer(props) {
     return (
         <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -91,7 +84,7 @@ class HomeP extends Component {
    
     const { classes,...other } = this.props;
      const { value } = this.state;
-     console.log(this.state.value);
+    
         
 
     return (
@@ -128,7 +121,7 @@ class HomeP extends Component {
     
     }}>
         </AppBar>
-        {console.log("value-"+value)}
+        {}
                  {value === 5 &&  <TabContainer ><AddAlbums/></TabContainer>
                 }
                  {value === 4 &&  <TabContainer > </TabContainer>}

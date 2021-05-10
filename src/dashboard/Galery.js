@@ -25,9 +25,9 @@ class Galery extends Component {
   
     //$(document).ready(function() {
       let imagesPreview = function(input, placeToInsertImagePreview) {
-        console.log("++++++++++++files_id"+input.filesAmount);
+       // console.log("++++++++++++files_id"+input.filesAmount);
         if (input.files) {
-          console.log("===="+input.files);
+       //   console.log("===="+input.files);
           let filesAmount = input.files.length;
           for (i = 0; i < filesAmount; i++) {
             let reader = new FileReader();
@@ -43,7 +43,7 @@ class Galery extends Component {
         }
       };
       $("#input-files").on("change", function() {
-        console.log("jgjhgjhgjhgj========+"+"div.preview-images");
+        console.log(""+"div.preview-images");
         imagesPreview(this, "div.preview-images");
       });
       

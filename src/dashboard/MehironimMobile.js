@@ -90,7 +90,8 @@ class MehironimMobile extends React.Component {
                 { name: "6-9", isActive: false },
                 { name: "ONE", isActive: false },
                 { name: "OPEN", isActive: false },
-                { name: "PRE", isActive: false }
+                { name: "PRE", isActive: false },
+                {name:"MITSVA",isActive:false}
             ]
         };
     }
@@ -107,7 +108,7 @@ class MehironimMobile extends React.Component {
         return (
 
             <div>
-                <Grid>
+                <Grid item={true} >
                     <div style={{
                     }}>
                         <img src={titme} alt="מחירון" style={{ width: "100%", justify: "center", position: "flex", backgroundImage: "cover" }} />
@@ -256,6 +257,36 @@ class MehironimMobile extends React.Component {
                                         </div>
                                     )
                                 }
+                                else if (el.name == "MITSVA") {
+                                    return (
+                                      <div> <img src={require(`../images/mitsva.jpg`).default}
+                                        style={{
+                                            borderWidth: 1,
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            width: "100%",
+                                            borderRadius: 200,
+                                        }}
+                  
+                  
+                                        alt="my image" />
+                                        <span >
+                                          <Typography
+                                            style={{
+                                              bottom: -2,
+                                              left: 'calc(40% - 20px)',
+                                              position: 'absolute',
+                                            }}
+                  
+                                          >
+                                            בת מצווה
+                                                          <span />
+                                          </Typography>
+                                        </span>
+                  
+                                      </div>
+                                    )
+                                  }
                                 else if (el.name == "OPEN") {
                                     return (
                                         <div> <img src={require(`../images/fam.jpg`).default}
@@ -330,7 +361,7 @@ class MehironimMobile extends React.Component {
                         {(() => {
                             if (el.name == "NEWBORN" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true}  style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "290%",
@@ -392,7 +423,7 @@ class MehironimMobile extends React.Component {
 
                             } else if (el.name == "2-6" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true}  style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "300%",
@@ -452,7 +483,7 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "6-9" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true} style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "300%",
@@ -513,7 +544,7 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "ONE" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true} style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "300%",
@@ -578,9 +609,63 @@ class MehironimMobile extends React.Component {
                                         </IconButton>
                                     </Grid>
                                 )
+                            } else if (el.name == "MITSVA" && el.isActive) {
+                                return (
+                                  <Grid item={true} style={{
+                                    width: "88%",
+                                        height: "233%",
+                                        top: "300%",
+                                        backgroundSize: " cover",
+                                        transform: "translate3d(0, -95%, 0)",
+                                        position: "absolute",
+                                        backgroundColor: "white",
+                                  }}>
+                
+                                    <CardActionArea style={{
+                                      justify: 'center',
+                                      alignContent: 'center',
+                                      alignItems: 'center'
+                                    }}>
+                                      <img src={require(`../images/mitsva3.jpg`).default} width="460" />
+                
+                                      <CardContent>
+                
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                          מחירון בת מצווה
+                                                    </Typography>
+                                        <Typography
+                
+                                          variant="body2" color="textSecondary" component="p">
+                
+                
+                                          <h3>חבילה בסיסית - 500 ש"ח</h3>
+                                                                משך זמן צילום : שעה
+                                      שני לוקיישנים לבחירה
+                                      כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+                                                                              <Divider variant="inset" component="li" />
+                
+                
+                                          <h3>חבילה מורחבת- 600 ש"ח</h3>
+                                              משך זמן צילום: עד שעה וחצי
+                                              שלוש לוקיישנים לבחירה
+                                              כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+                
+                                                        <Divider variant="inset" component="li" />
+                                          <h3>תוספות</h3>* משפחה בתוספת 200 ש"ח.
+                                              * חומר גלם לא נשלח.
+                                              * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
+                
+                                                    </Typography>
+                                      </CardContent>
+                                    </CardActionArea>
+                                    <IconButton edge="start" color="inherit" key={index} onClick={() => this.onClick(index)} aria-label="close">
+                                      <CloseIcon />
+                                    </IconButton>
+                                  </Grid>
+                                )
                             } else if (el.name == "OPEN" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true} style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "300%",
@@ -641,7 +726,7 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "PRE" && el.isActive) {
                                 return (
-                                    <Grid style={{
+                                    <Grid item={true} style={{
                                         width: "88%",
                                         height: "233%",
                                         top: "300%",

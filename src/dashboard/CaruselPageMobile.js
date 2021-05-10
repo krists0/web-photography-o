@@ -2,9 +2,7 @@ import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
 "mdbreact";
 import ariel from "../images/ariel.jpg";
-import IMG1 from "../images/IMG_2302.jpg";
-import MAD from "../images/IMG_9383.jpg";
-import AR from "../images/IMG_0138.jpg";
+
 import AR2 from "../images/IMG_0138.jpg";
 import sm1 from"../images/2.jpg";
 import sm2 from"../images/1.jpg";

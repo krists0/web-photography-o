@@ -5,14 +5,14 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 
 const Glitch = () => {
-    console.log("glitch");
+    
   const [images, setImages] = React.useState(null);
    
   React.useEffect(() => {
     let shouldCancel = false;
 
     const call = async () => {
-        console.log("call func");
+    
       const response = await axios.get(
         "https://google-photos-album-demo2.glitch.me/PkFtaDyoPpqTNih19"
       );
