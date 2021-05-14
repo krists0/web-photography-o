@@ -1,7 +1,8 @@
 const imagesStyles = {
     imgFluid: {
       maxWidth: "100%",
-      height: "auto"
+      height: "auto",
+      //left:"10%"
     },
     imgRounded: {
       borderRadius: "6px !important",

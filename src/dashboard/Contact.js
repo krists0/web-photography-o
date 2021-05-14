@@ -10,7 +10,7 @@ import styles from "../material-kit-react/profilePage";
 import CarouselPage from "./CarouselPage";
 import StudioAbout from "./StudioAbout";
 import CarouselPageMobile from "./CaruselPageMobile";
-
+import info from "../images/info.jpg";
 
 
 
@@ -29,13 +29,16 @@ export default function Contact(props) {
   );
 
 
- 
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
 
   return (
     <div >
 
       <div small="true" filter="true" image={require("../images/profile.jpg")}
-
+        
       />
       {/**this is the description part */}
       <div className={classNames(classes.main, classes.mainRaised)}>
@@ -43,22 +46,16 @@ export default function Contact(props) {
         <div >
           <Grid item={true}  >
             <Grid item={true}  xs={12} sm={12} md={6}>
-              <div className={classes.profile}  >
-                <div>
-                  <img src={profile} alt="..." className={imageClasses} />
-                </div>
+              <div className={classes.profile}  >             
                 <BrowserView>
+                <img src={profile}  alt="ortal" className={imageClasses} />
                   <div className={classes.name}>
-                    <h3 className={classes.title}
-                      style={{
-                        top: "20px",
-        
-                      }}
-                    >אורטל כהן</h3>
-                    <h4>צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
+                    <h3 className={classes.title} 
+                   >אורטל כהן</h3>
+                    <h4 style={{right:"25%",position:"absolute"}} >צלמת הריון, ניו בורן,ילדים ומשפחה </h4>
                   </div>
                 </BrowserView>
-
+              
 
               </div>
             </Grid>
@@ -67,7 +64,7 @@ export default function Contact(props) {
           <div className={classes.description}
 
             style={{
-             
+              
               flexGrow: "1",            
               maxWidth: "600px",
               overflow: 'hidden',
@@ -76,10 +73,20 @@ export default function Contact(props) {
           >
             
             <MobileView >
-              
-              <h4 style={{marginTop:"80px",color:"#462803"}} >אורטל כהן</h4>
+              <img src={profile}  alt="ortal" className={imageClasses} style={{
+                   maxWidth: "170px",
+                   width: "100%",
+                   margin: "0 auto",
+                   transform: "translate3d(0, -50%, 0)",
+                   position:"absolute",
+                   top:"0%",
+                   right:"1%",
+
+              }} />
+              <h4 style={{marginTop:"140px",color:"#462803"}} >אורטל כהן</h4>
               <h5 style={{color:"#462803"}}>צלמת הריון, ניו בורן,ילדים ומשפחה </h5>
             </MobileView>
+            
             <h2>אודות</h2>
             <p>
          

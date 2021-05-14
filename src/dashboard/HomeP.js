@@ -6,13 +6,14 @@ import Link from "@material-ui/core/Link";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar';
+
 import Galery from "../dashboard/Galery";
 import Mehiron from "../dashboard/Mehiron";
 import Album from "../dashboard/Albums";
 import AddAlbums from "./AddAlbums";
 import back from "../images/fam.jpg";
 import '../react-slideshow-image/styles.css';
-
+import Main from "./Main";
 
 
 import Contact from "./Contact";
@@ -63,7 +64,7 @@ function MadeWithLove() {
 
 class HomeP extends Component {
     state = {
-        value: 0,
+        value: 3,
         valueNav:0,
         openMenu: false,
         active: 0
@@ -97,10 +98,10 @@ class HomeP extends Component {
             style={{color:"#424242",}}
             >
 
-                <Tab textColor="inherit" label="ראשי" />
-                <Tab textColor="inherit" label="צור קשר" />
-                <Tab textColor="inherit" label="מחירון" />
                 <Tab textColor="inherit" label="גלריית תמונות" />
+                <Tab textColor="inherit" label="מחירון" />
+                <Tab textColor="inherit" label="צור קשר" />
+                <Tab textColor="inherit" label="ראשי" />
                {
                    /**
                     * <Tab variant="h6" textColor="inherit" label="ראשי" />
@@ -125,10 +126,10 @@ class HomeP extends Component {
                  {value === 5 &&  <TabContainer ><AddAlbums/></TabContainer>
                 }
                  {value === 4 &&  <TabContainer > </TabContainer>}
-                {value === 3 && <TabContainer><Galery/></TabContainer>}
-                {value === 2 && <TabContainer ><Mehiron/></TabContainer>}
-                {value === 1 && <TabContainer><Album/></TabContainer>}
-                {value === 0 && <TabContainer ><Contact/></TabContainer>}
+                {value === 3 && <TabContainer><Main/></TabContainer>}
+                {value === 2 && <TabContainer ><Album/></TabContainer>}
+                {value === 1 && <TabContainer><Mehiron/></TabContainer>}
+                {value === 0 && <TabContainer ><Galery/></TabContainer>}
                
                
 
