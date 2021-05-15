@@ -79,7 +79,7 @@ export default function ContactUsMobile() {
               <MDBCardBody className="contact text-center h-100 grey-text" >
                 <h3 className="my-4 pb-2">:דרכים ליצירת קשר</h3>
 
-                <ul className="text-lg-left list-unstyled ml-4">
+                <ul className="text-lg-right list-unstyled ml-4">
                   <li>
                     <p>
                       <MDBIcon icon="map-marker-alt" className="pr-2" />

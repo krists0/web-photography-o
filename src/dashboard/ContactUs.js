@@ -26,17 +26,57 @@ export default function ContactUs() {
       <section className="contact-section my-5" >
         <MDBCard style={{ width: "1450px" }}>
           <MDBRow>
-            <MDBCol lg="8">
+             <MDBCol lg="4" >
+              <MDBCardBody className="contact text-center h-100 grey-text" >
+                <h3 className="my-4 pb-2">:דרכים ליצירת קשר</h3>
+
+                <ul className="text-lg-right list-unstyled ml-4">
+                  <li>
+                    <p>
+                      <MDBIcon icon="map-marker-alt" className="pr-2" />
+                   ירוחם
+                  </p>
+                  </li>
+                  <li>
+                    <p>
+                      <MDBIcon icon="phone" className="pr-2" />0525321247
+                  </p>
+                  </li>
+                  <li>
+                    <p>
+
+                      <h4>Ortalcohen.p@gmail.com</h4>
+                    </p>
+                  </li>
+                </ul>
+                <hr className="hr-light my-4" />
+                <ul className="list-inline text-center list-unstyled">
+
+                  <li className="list-inline-item">
+                    <a href="#!" className="p-2 fa-lg w-ic">
+
+                      <MDBIcon fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+
+                      <MDBIcon fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+
+
+
+                    </a>
+                  </li>
+                </ul>
+              </MDBCardBody>
+            </MDBCol>
+            <MDBCol className="text-center" lg="8">
               <MDBCardBody className="form">
                 <form className="contact-form" onSubmit={sendEmail}>
                   <h3 className="mt-4">
                     <MDBIcon icon="envelope" className="pr-2" />
                כתבו לי
               </h3>
-                  <MDBRow>
+                  <MDBRow >
                     <MDBCol md="6">
-                      <div className="md-form mb-0">
-                        <MDBInput
+                      <div className="md-form mb-0" >
+                        <MDBInput 
                           name="from_name" type="text"
                           id="form-contact-name"
                           label="שם פרטי"
@@ -75,46 +115,7 @@ export default function ContactUs() {
                 </form>
               </MDBCardBody>
             </MDBCol>
-            <MDBCol lg="4">
-              <MDBCardBody className="contact text-center h-100 grey-text" >
-                <h3 className="my-4 pb-2">:דרכים ליצירת קשר</h3>
-
-                <ul className="text-lg-left list-unstyled ml-4">
-                  <li>
-                    <p>
-                      <MDBIcon icon="map-marker-alt" className="pr-2" />
-                   ירוחם
-                  </p>
-                  </li>
-                  <li>
-                    <p>
-                      <MDBIcon icon="phone" className="pr-2" />0525321247
-                  </p>
-                  </li>
-                  <li>
-                    <p>
-
-                      <h4>Ortalcohen.p@gmail.com</h4>
-                    </p>
-                  </li>
-                </ul>
-                <hr className="hr-light my-4" />
-                <ul className="list-inline text-center list-unstyled">
-
-                  <li className="list-inline-item">
-                    <a href="#!" className="p-2 fa-lg w-ic">
-
-                      <MDBIcon fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
-
-                      <MDBIcon fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
-
-
-
-                    </a>
-                  </li>
-                </ul>
-              </MDBCardBody>
-            </MDBCol>
+           
           </MDBRow>
         </MDBCard>
       </section>

@@ -28,6 +28,30 @@ import CloseIcon from '@material-ui/icons/Close';
 import DialogconMobile from './DialogconMobile';
 
 
+const mehironOut = {
+   
+    borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: "100%",
+
+    borderRadius: 200,
+  };
+  const mehironInGrid = {
+    width: "88%",
+                                        height: "300%",
+                                        top: "350%",
+                                        backgroundSize: " cover",
+                                        transform: "translate3d(0, -95%, 0)",
+                                        position: "absolute",
+                                        backgroundColor: "white",
+  };
+  const mehiromInCard = {
+    justify: 'center',
+    alignContent: 'center',
+    alignItems: 'center'
+  };
+   
 const styles = (theme) => ({
     root: {
         margin: 0,
@@ -39,6 +63,7 @@ const styles = (theme) => ({
         top: theme.spacing(1),
         color: theme.palette.grey[500],
     },
+
 });
 
 const DialogTitle = withStyles(styles)((props) => {
@@ -140,15 +165,7 @@ class MehironimMobile extends React.Component {
                                             <img
                                                 title="mehiron 0-3"
                                                 src={require(`../images/elon2.jpg`).default}
-                                                style={{
-
-                                                    borderWidth: 1,
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    width: "100%",
-
-                                                    borderRadius: 200,
-                                                }}
+                                                style={mehironOut}
 
 
                                                 alt="my image" />
@@ -173,17 +190,7 @@ class MehironimMobile extends React.Component {
                                         <div>
 
                                             <img src={require(`../images/three.jpg`).default}
-                                                style={{
-                                                    borderWidth: 1,
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    width: "100%",
-                                                    borderRadius: 200,
-
-                                                }}
-
-
-                                                alt="my image" />
+                                                style={mehironOut} alt="my image" />
                                             <span >
                                                 <Typography
                                                     style={{
@@ -202,16 +209,7 @@ class MehironimMobile extends React.Component {
                                 } else if (el.name == "6-9") {
                                     return (
                                         <div> <img src={require(`../images/six.jpg`).default}
-                                            style={{
-                                                borderWidth: 1,
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                width: "100%",
-                                                borderRadius: 200,
-                                            }}
-
-
-                                            alt="my image" />
+                                        style={mehironOut}  alt="my image" />
                                             <span >
                                                 <Typography
                                                     style={{
@@ -231,16 +229,7 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "ONE") {
                                     return (
                                         <div> <img src={require(`../images/shana.jpg`).default}
-                                            style={{
-                                                borderWidth: 1,
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                width: "100%",
-                                                borderRadius: 200,
-                                            }}
-
-
-                                            alt="my image" />
+                                        style={mehironOut} alt="my image" />
                                             <span >
                                                 <Typography
                                                     style={{
@@ -260,16 +249,7 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "MITSVA") {
                                     return (
                                       <div> <img src={require(`../images/mitsva.jpg`).default}
-                                        style={{
-                                            borderWidth: 1,
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            width: "100%",
-                                            borderRadius: 200,
-                                        }}
-                  
-                  
-                                        alt="my image" />
+                                      style={mehironOut}  alt="my image" />
                                         <span >
                                           <Typography
                                             style={{
@@ -290,16 +270,7 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "OPEN") {
                                     return (
                                         <div> <img src={require(`../images/fam.jpg`).default}
-                                            style={{
-                                                borderWidth: 1,
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                width: "100%",
-                                                borderRadius: 200,
-                                            }}
-
-
-                                            alt="my image" />
+                                        style={mehironOut}     alt="my image" />
                                             <span >
                                                 <Typography
                                                     style={{
@@ -320,13 +291,7 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "PRE") {
                                     return (
                                         <div> <img src={require(`../images/preg.jpg`).default}
-                                            style={{
-
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                width: "100%",
-                                                borderRadius: 200,
-                                            }}
+                                        style={mehironOut}
                                             alt="my image" />
                                             <span >
                                                 <Typography
@@ -361,23 +326,12 @@ class MehironimMobile extends React.Component {
                         {(() => {
                             if (el.name == "NEWBORN" && el.isActive) {
                                 return (
-                                    <Grid item={true}  style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "290%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-
-                                    }}>
+                                    <Grid item={true}  style={mehironInGrid}>
 
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea
+                                        style={mehiromInCard}
+                                        >
                                             <img src={require(`../images/elon2.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -423,22 +377,10 @@ class MehironimMobile extends React.Component {
 
                             } else if (el.name == "2-6" && el.isActive) {
                                 return (
-                                    <Grid item={true}  style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                    }}>
+                                    <Grid item={true}  style={mehironInGrid}>
 
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea   style={mehiromInCard}>
                                             <img src={require(`../images/three.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -483,21 +425,9 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "6-9" && el.isActive) {
                                 return (
-                                    <Grid item={true} style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                    }}>
+                                    <Grid item={true} style={mehironInGrid}>
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea  style={mehiromInCard}>
                                             <img src={require(`../images/six.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -544,23 +474,11 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "ONE" && el.isActive) {
                                 return (
-                                    <Grid item={true} style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                    }}>
+                                    <Grid item={true} style={mehironInGrid}>
 
 
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea  style={mehiromInCard}>
                                             <img src={require(`../images/IMG_9332.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -611,21 +529,9 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "MITSVA" && el.isActive) {
                                 return (
-                                  <Grid item={true} style={{
-                                    width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                  }}>
+                                  <Grid item={true} style={mehironInGrid}>
                 
-                                    <CardActionArea style={{
-                                      justify: 'center',
-                                      alignContent: 'center',
-                                      alignItems: 'center'
-                                    }}>
+                                    <CardActionArea   style={mehiromInCard}>
                                       <img src={require(`../images/mitsva3.jpg`).default} width="460" />
                 
                                       <CardContent>
@@ -665,21 +571,9 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "OPEN" && el.isActive) {
                                 return (
-                                    <Grid item={true} style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                    }}>
+                                    <Grid item={true}  style={mehironInGrid}>
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea   style={mehiromInCard}>
                                             <img src={require(`../images/fam.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -726,22 +620,10 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "PRE" && el.isActive) {
                                 return (
-                                    <Grid item={true} style={{
-                                        width: "88%",
-                                        height: "233%",
-                                        top: "300%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-                                    }}>
+                                    <Grid item={true} style={mehironInGrid}>
 
 
-                                        <CardActionArea style={{
-                                            justify: 'center',
-                                            alignContent: 'center',
-                                            alignItems: 'center'
-                                        }}>
+                                        <CardActionArea   style={mehiromInCard}>
                                             <img src={require(`../images/preg.jpg`).default} width="100%" />
 
                                             <CardContent>

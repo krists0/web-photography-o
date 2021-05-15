@@ -27,6 +27,31 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 
 
+
+const mehironOut = {
+  borderWidth: 1,
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: 350,
+  height: 350,
+  variant: "outlined",
+  borderRadius: 200,
+};
+const mehironInGrid = {
+  maxWidth: 1600,
+  height: "900px",
+  width: "1480px",
+  top: "70%",
+  position: "absolute",
+  backgroundColor: "white",
+  variant: "outlined",
+};
+const mehiromInCard = {
+  justify: 'center',
+  alignContent: 'center',
+  alignItems: 'center',
+  variant: "outlined",
+};
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -38,6 +63,7 @@ const styles = (theme) => ({
     top: theme.spacing(1),
     color: theme.palette.grey[500],
   },
+
 });
 
 const DialogTitle = withStyles(styles)((props) => {
@@ -138,17 +164,7 @@ class Mehironim extends React.Component {
                       <img
                         title="mehiron 0-3"
                         src={require(`../images/elon.jpg`).default}
-                        style={{
-
-                          borderWidth: 1,
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          width: 350,
-                          height: 350,
-
-                          borderRadius: 200,
-                        }}
-
+                        style={mehironOut}
 
                         alt="my image" />
                       <span >
@@ -172,17 +188,7 @@ class Mehironim extends React.Component {
                     <div>
 
                       <img src={require(`../images/three.jpg`).default}
-                        style={{
-                          borderWidth: 1,
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          width: 350,
-                          height: 350,
-                          borderRadius: 200,
-
-                        }}
-
-
+                        style={mehironOut}
                         alt="my image" />
                       <span >
                         <Typography
@@ -202,17 +208,7 @@ class Mehironim extends React.Component {
                 } else if (el.name == "6-9") {
                   return (
                     <div> <img src={require(`../images/six.jpg`).default}
-                      style={{
-                        borderWidth: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: 350,
-                        height: 350,
-                        borderRadius: 200,
-                      }}
-
-
-                      alt="my image" />
+                      style={mehironOut} alt="my image" />
                       <span >
                         <Typography
                           style={{
@@ -232,17 +228,7 @@ class Mehironim extends React.Component {
                 else if (el.name == "ONE") {
                   return (
                     <div> <img src={require(`../images/shana.jpg`).default}
-                      style={{
-                        borderWidth: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: 350,
-                        height: 350,
-                        borderRadius: 200,
-                      }}
-
-
-                      alt="my image" />
+                      style={mehironOut} alt="my image" />
                       <span >
                         <Typography
                           style={{
@@ -262,17 +248,7 @@ class Mehironim extends React.Component {
                 else if (el.name == "MITSVA") {
                   return (
                     <div> <img src={require(`../images/mitsva.jpg`).default}
-                      style={{
-                        borderWidth: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: 350,
-                        height: 350,
-                        borderRadius: 200,
-                      }}
-
-
-                      alt="my image" />
+                      style={mehironOut} alt="my image" />
                       <span >
                         <Typography
                           style={{
@@ -293,17 +269,7 @@ class Mehironim extends React.Component {
                 else if (el.name == "OPEN") {
                   return (
                     <div> <img src={require(`../images/fam.jpg`).default}
-                      style={{
-                        borderWidth: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: 350,
-                        height: 350,
-                        borderRadius: 200,
-                      }}
-
-
-                      alt="my image" />
+                      style={mehironOut} alt="my image" />
                       <span >
                         <Typography
                           style={{
@@ -324,15 +290,7 @@ class Mehironim extends React.Component {
                 else if (el.name == "PRE") {
                   return (
                     <div> <img src={require(`../images/preg.jpg`).default}
-                      style={{
-                        borderWidth: 1,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: 350,
-                        height: 350,
-                        borderRadius: 200,
-                      }}
-                      alt="my image" />
+                      style={mehironOut} alt="my image" />
                       <span >
                         <Typography
                           style={{
@@ -367,21 +325,14 @@ class Mehironim extends React.Component {
             {(() => {
               if (el.name == "NEWBORN" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>
 
 
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                    <CardActionArea style={
+                      mehiromInCard
+                    }>
                       <img src={require(`../images/elon.jpg`).default} width="460" />
 
                       <CardContent>
@@ -399,7 +350,7 @@ class Mehironim extends React.Component {
                                                         משך זמן צילום : שעה
                                                         שני סטים של צילומים עם ביגוד מתחלף
                                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset" />
 
 
                           <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -410,7 +361,7 @@ class Mehironim extends React.Component {
                                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset" />
 
                           <h3>תוספות</h3>
 
@@ -430,21 +381,11 @@ class Mehironim extends React.Component {
 
               } else if (el.name == "2-6" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>  <CardActionArea style={
+                    mehiromInCard
+                  }>
                       <img src={require(`../images/three.jpg`).default} width="460" />
 
                       <CardContent>
@@ -464,7 +405,7 @@ class Mehironim extends React.Component {
                                         שני סטים של צילומים עם אביזרים מתחלפים
                                         החלפה של שני פרטי לבוש
                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
 
 
                           <h3>חבילה מורחבת- 500 ש"ח</h3>
@@ -473,7 +414,7 @@ class Mehironim extends React.Component {
                                                 3 סטים של צילומים עם אביזרים מתחלפים
                                                 החלפה של 3 פרטי לבוש
                                                 כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                       <Divider variant="inset" component="li" />
+                                       <Divider variant="inset" />
                           <h3>תוספות</h3>
 
                                             * אח בתוספת 100 ש"ח לכל חבילה.
@@ -489,20 +430,11 @@ class Mehironim extends React.Component {
                 )
               } else if (el.name == "6-9" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>    <CardActionArea style={
+                    mehiromInCard
+                  }>
                       <img src={require(`../images/six.jpg`).default} width="460" />
 
                       <CardContent>
@@ -522,7 +454,7 @@ class Mehironim extends React.Component {
                                         החלפה של שני פרטי לבוש
                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
 
 
                           <h3>חבילה מורחבת- 500 ש"ח</h3>
@@ -533,7 +465,7 @@ class Mehironim extends React.Component {
                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
                           <h3>תוספות</h3>
                                                  * אח בתוספת 100 ש"ח לכל חבילה.
                                                 * חומר גלם לא נשלח.
@@ -549,22 +481,11 @@ class Mehironim extends React.Component {
                 )
               } else if (el.name == "ONE" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>        <CardActionArea style={
+                    mehiromInCard
+                  }>
                       <img src={require(`../images/IMG_9332.jpg`).default} width="460" />
 
                       <CardContent>
@@ -586,7 +507,7 @@ class Mehironim extends React.Component {
 
 
 
-                                            <Divider variant="inset" component="li" />
+                                            <Divider variant="inset" />
 
                           <h3>חבילה מורחבת- סמאש קייק 500 ש"ח</h3>
                                             צילום הילד/ה + בני המשפחה
@@ -596,7 +517,7 @@ class Mehironim extends React.Component {
 
 
 
-                                            <Divider variant="inset" component="li" />
+                                            <Divider variant="inset" />
                           <h3>תוספות </h3>
                                             * אח בתוספת 100 ש"ח לכל חבילה
                                             * חומר גלם לא נשלח.
@@ -615,20 +536,11 @@ class Mehironim extends React.Component {
                 )
               } else if (el.name == "MITSVA" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }> <CardActionArea style={
+                    mehiromInCard
+                  }>
                       <img src={require(`../images/mitsva3.jpg`).default} width="460" />
 
                       <CardContent>
@@ -653,7 +565,7 @@ class Mehironim extends React.Component {
                               שלוש לוקיישנים לבחירה
                               כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
                           <h3>תוספות</h3>* משפחה בתוספת 200 ש"ח.
                               * חומר גלם לא נשלח.
                               * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
@@ -668,20 +580,12 @@ class Mehironim extends React.Component {
                 )
               } else if (el.name == "OPEN" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>
+                    <CardActionArea style={
+                      mehiromInCard
+                    }>
                       <img src={require(`../images/fam.jpg`).default} width="460" />
 
                       <CardContent>
@@ -703,7 +607,7 @@ class Mehironim extends React.Component {
                                         שלוש לוקיישנים לבחירה
                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
 
 
                           <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -711,7 +615,7 @@ class Mehironim extends React.Component {
                                         משך זמן צילום: עד שעה וחצי
                                         שלוש לוקיישנים לבחירה
                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
                           <h3>תוספות</h3>
                                         * ילד נוסף בתוספת 100 ש"ח.
                                         * חומר גלם לא נשלח.
@@ -728,21 +632,11 @@ class Mehironim extends React.Component {
                 )
               } else if (el.name == "PRE" && el.isActive) {
                 return (
-                  <Grid item={true} style={{
-                    maxWidth: 1600,
-                    height: "900px",
-                    width: "1480px",
-                    top: "70%",
-                    position: "absolute",
-                    backgroundColor: "white",
-                  }}>
-
-
-                    <CardActionArea style={{
-                      justify: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center'
-                    }}>
+                  <Grid item={true} style={
+                    mehironInGrid
+                  }>   <CardActionArea style={
+                    mehiromInCard
+                  }>
                       <img src={require(`../images/preg.jpg`).default} width="460" />
 
                       <CardContent>
@@ -761,7 +655,7 @@ class Mehironim extends React.Component {
                                         משך זמן צילום : שעה
                                         שני סטים של צילומים עם ביגוד מתחלף
                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
 
 
                           <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -772,7 +666,7 @@ class Mehironim extends React.Component {
                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset" />
 
                           <h3>תוספות</h3>
 

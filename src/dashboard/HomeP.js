@@ -16,8 +16,6 @@ import '../react-slideshow-image/styles.css';
 import Main from "./Main";
 
 
-import Contact from "./Contact";
-
 function TabContainer(props) {
     return (
         <Typography component="div" style={{ padding: 8 * 3 }}>
