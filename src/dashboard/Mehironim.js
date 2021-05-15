@@ -168,17 +168,19 @@ class Mehironim extends React.Component {
 
                         alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           מחירון ניו בורן
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
                     </div>
                   )
@@ -191,17 +193,19 @@ class Mehironim extends React.Component {
                         style={mehironOut}
                         alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           6-3 חודשים
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
                     </div>
                   )
@@ -210,17 +214,19 @@ class Mehironim extends React.Component {
                     <div> <img src={require(`../images/six.jpg`).default}
                       style={mehironOut} alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           6-12 חודשים
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
                     </div>
                   )
@@ -230,17 +236,19 @@ class Mehironim extends React.Component {
                     <div> <img src={require(`../images/shana.jpg`).default}
                       style={mehironOut} alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           גיל שנה
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
                     </div>
                   )
@@ -250,17 +258,19 @@ class Mehironim extends React.Component {
                     <div> <img src={require(`../images/mitsva.jpg`).default}
                       style={mehironOut} alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           בת מצווה
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
 
                     </div>
@@ -271,17 +281,19 @@ class Mehironim extends React.Component {
                     <div> <img src={require(`../images/fam.jpg`).default}
                       style={mehironOut} alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           צילומי משפחה
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
 
                     </div>
@@ -292,17 +304,19 @@ class Mehironim extends React.Component {
                     <div> <img src={require(`../images/preg.jpg`).default}
                       style={mehironOut} alt="my image" />
                       <span >
-                        <Typography
+                        <h4
                           style={{
-                            bottom: -2,
-                            left: 'calc(40% - 20px)',
+                            bottom: -22,
+                            left: 0,
+                            right: 0,
                             position: 'absolute',
+                            color:"#5F3301"
                           }}
 
                         >
                           הריון
                                         <span />
-                        </Typography>
+                        </h4>
                       </span>
 
                     </div>

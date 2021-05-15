@@ -29,29 +29,30 @@ import DialogconMobile from './DialogconMobile';
 
 
 const mehironOut = {
-   
+
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
     width: "100%",
+    height:"320px",
 
     borderRadius: 200,
-  };
-  const mehironInGrid = {
+};
+const mehironInGrid = {
     width: "88%",
-                                        height: "300%",
-                                        top: "350%",
-                                        backgroundSize: " cover",
-                                        transform: "translate3d(0, -95%, 0)",
-                                        position: "absolute",
-                                        backgroundColor: "white",
-  };
-  const mehiromInCard = {
+    height: "360%",
+    top: "410%",
+    backgroundSize: " cover",
+    transform: "translate3d(0, -95%, 0)",
+    position: "absolute",
+    backgroundColor: "white",
+};
+const mehiromInCard = {
     justify: 'center',
     alignContent: 'center',
     alignItems: 'center'
-  };
-   
+};
+
 const styles = (theme) => ({
     root: {
         margin: 0,
@@ -116,7 +117,7 @@ class MehironimMobile extends React.Component {
                 { name: "ONE", isActive: false },
                 { name: "OPEN", isActive: false },
                 { name: "PRE", isActive: false },
-                {name:"MITSVA",isActive:false}
+                { name: "MITSVA", isActive: false }
             ]
         };
     }
@@ -170,17 +171,19 @@ class MehironimMobile extends React.Component {
 
                                                 alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     מחירון ניו בורן
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
                                         </div>
                                     )
@@ -192,36 +195,40 @@ class MehironimMobile extends React.Component {
                                             <img src={require(`../images/three.jpg`).default}
                                                 style={mehironOut} alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     6-3 חודשים
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
                                         </div>
                                     )
                                 } else if (el.name == "6-9") {
                                     return (
                                         <div> <img src={require(`../images/six.jpg`).default}
-                                        style={mehironOut}  alt="my image" />
+                                            style={mehironOut} alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     6-12 חודשים
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
                                         </div>
                                     )
@@ -229,60 +236,66 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "ONE") {
                                     return (
                                         <div> <img src={require(`../images/shana.jpg`).default}
-                                        style={mehironOut} alt="my image" />
+                                            style={mehironOut} alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     גיל שנה
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
                                         </div>
                                     )
                                 }
                                 else if (el.name == "MITSVA") {
                                     return (
-                                      <div> <img src={require(`../images/mitsva.jpg`).default}
-                                      style={mehironOut}  alt="my image" />
-                                        <span >
-                                          <Typography
-                                            style={{
-                                              bottom: -2,
-                                              left: 'calc(40% - 20px)',
-                                              position: 'absolute',
-                                            }}
-                  
-                                          >
-                                            בת מצווה
+                                        <div> <img src={require(`../images/mitsva.jpg`).default}
+                                            style={mehironOut} alt="my image" />
+                                            <span >
+                                                <h7
+                                                    style={{
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
+                                                        position: 'absolute',
+                                                        color: "#5F3301"
+                                                    }}
+
+                                                >
+                                                    בת מצווה
                                                           <span />
-                                          </Typography>
-                                        </span>
-                  
-                                      </div>
+                                                </h7>
+                                            </span>
+
+                                        </div>
                                     )
-                                  }
+                                }
                                 else if (el.name == "OPEN") {
                                     return (
                                         <div> <img src={require(`../images/fam.jpg`).default}
-                                        style={mehironOut}     alt="my image" />
+                                            style={mehironOut} alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     צילומי משפחה
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
 
                                         </div>
@@ -291,20 +304,22 @@ class MehironimMobile extends React.Component {
                                 else if (el.name == "PRE") {
                                     return (
                                         <div> <img src={require(`../images/preg.jpg`).default}
-                                        style={mehironOut}
+                                            style={mehironOut}
                                             alt="my image" />
                                             <span >
-                                                <Typography
+                                                <h7
                                                     style={{
-                                                        bottom: -2,
-                                                        left: 'calc(40% - 20px)',
+                                                        bottom: -10,
+                                                        left: 0,
+                                                        right: 0,
                                                         position: 'absolute',
+                                                        color: "#5F3301"
                                                     }}
 
                                                 >
                                                     הריון
                                         <span />
-                                                </Typography>
+                                                </h7>
                                             </span>
 
                                         </div>
@@ -326,11 +341,11 @@ class MehironimMobile extends React.Component {
                         {(() => {
                             if (el.name == "NEWBORN" && el.isActive) {
                                 return (
-                                    <Grid item={true}  style={mehironInGrid}>
+                                    <Grid item={true} style={mehironInGrid}>
 
 
                                         <CardActionArea
-                                        style={mehiromInCard}
+                                            style={mehiromInCard}
                                         >
                                             <img src={require(`../images/elon2.jpg`).default} width="100%" />
 
@@ -343,27 +358,27 @@ class MehironimMobile extends React.Component {
 
                                                     variant="body2" color="textSecondary" component="p">
 
-                                                    <h3>חבילה בסיסית - 500 ש"ח</h3>
-צילום התינוק/ת בלבד
-משך זמן צילום : כשעתיים
-שני סטים של צילומים עם אביזרים מתחלפים
-החלפה של שני פרטי לבוש
-כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-<Divider variant="inset" component="li" />
+                                                                                                        <h3>חבילה בסיסית - 500 ש"ח</h3>
+                                                    צילום התינוק/ת בלבד
+                                                    משך זמן צילום : כשעתיים
+                                                    שני סטים של צילומים עם אביזרים מתחלפים
+                                                    החלפה של שני פרטי לבוש
+                                                    כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
+                                                    <Divider variant="inset" component="li" />
 
 
-                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
-            צילום התינוק/ת + הורים
-משך זמן צילום: כ-3  שעות
-3 סטים של צילומים עם אביזרים מתחלפים
-החלפה של 3 פרטי לבוש
-כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה
-<Divider variant="inset" component="li" />
-                                                    <h3>תוספות</h3>
+                                                                                                        <h3>חבילה מורחבת- 600 ש"ח</h3>
+                                                                צילום התינוק/ת + הורים
+                                                    משך זמן צילום: כ-3  שעות
+                                                    3 סטים של צילומים עם אביזרים מתחלפים
+                                                    החלפה של 3 פרטי לבוש
+                                                    כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה
+                                                    <Divider variant="inset" component="li" />
+                                                                                                        <h3>תוספות</h3>
 
-            * אח בתוספת 100 ש"ח לכל חבילה.
-* חומר גלם לא נשלח.
-* אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
+                                                                * אח בתוספת 100 ש"ח לכל חבילה.
+                                                    * חומר גלם לא נשלח.
+                                                    * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
                                                 </Typography>
                                             </CardContent>
                                         </CardActionArea>
@@ -377,10 +392,10 @@ class MehironimMobile extends React.Component {
 
                             } else if (el.name == "2-6" && el.isActive) {
                                 return (
-                                    <Grid item={true}  style={mehironInGrid}>
+                                    <Grid item={true} style={mehironInGrid}>
 
 
-                                        <CardActionArea   style={mehiromInCard}>
+                                        <CardActionArea style={mehiromInCard}>
                                             <img src={require(`../images/three.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -427,7 +442,7 @@ class MehironimMobile extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
 
-                                        <CardActionArea  style={mehiromInCard}>
+                                        <CardActionArea style={mehiromInCard}>
                                             <img src={require(`../images/six.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -478,7 +493,7 @@ class MehironimMobile extends React.Component {
 
 
 
-                                        <CardActionArea  style={mehiromInCard}>
+                                        <CardActionArea style={mehiromInCard}>
                                             <img src={require(`../images/IMG_9332.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -529,52 +544,52 @@ class MehironimMobile extends React.Component {
                                 )
                             } else if (el.name == "MITSVA" && el.isActive) {
                                 return (
-                                  <Grid item={true} style={mehironInGrid}>
-                
-                                    <CardActionArea   style={mehiromInCard}>
-                                      <img src={require(`../images/mitsva3.jpg`).default} width="460" />
-                
-                                      <CardContent>
-                
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                          מחירון בת מצווה
+                                    <Grid item={true} style={mehironInGrid}>
+
+                                        <CardActionArea style={mehiromInCard}>
+                                            <img src={require(`../images/mitsva3.jpg`).default} width="100%" />
+
+                                            <CardContent>
+
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    מחירון בת מצווה
                                                     </Typography>
-                                        <Typography
-                
-                                          variant="body2" color="textSecondary" component="p">
-                
-                
-                                          <h3>חבילה בסיסית - 500 ש"ח</h3>
+                                                <Typography
+
+                                                    variant="body2" color="textSecondary" component="p">
+
+
+                                                    <h3>חבילה בסיסית - 500 ש"ח</h3>
                                                                 משך זמן צילום : שעה
                                       שני לוקיישנים לבחירה
                                       כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
                                                                               <Divider variant="inset" component="li" />
-                
-                
-                                          <h3>חבילה מורחבת- 600 ש"ח</h3>
+
+
+                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
                                               משך זמן צילום: עד שעה וחצי
                                               שלוש לוקיישנים לבחירה
                                               כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                
+
                                                         <Divider variant="inset" component="li" />
-                                          <h3>תוספות</h3>* משפחה בתוספת 200 ש"ח.
+                                                    <h3>תוספות</h3>* משפחה בתוספת 200 ש"ח.
                                               * חומר גלם לא נשלח.
                                               * אלבומים בתוספת תשלום (20*20 300 ש"ח, 25*25 400 ש"ח, 30*30 500 ש"ח).
-                
+
                                                     </Typography>
-                                      </CardContent>
-                                    </CardActionArea>
-                                    <IconButton edge="start" color="inherit" key={index} onClick={() => this.onClick(index)} aria-label="close">
-                                      <CloseIcon />
-                                    </IconButton>
-                                  </Grid>
+                                            </CardContent>
+                                        </CardActionArea>
+                                        <IconButton edge="start" color="inherit" key={index} onClick={() => this.onClick(index)} aria-label="close">
+                                            <CloseIcon />
+                                        </IconButton>
+                                    </Grid>
                                 )
                             } else if (el.name == "OPEN" && el.isActive) {
                                 return (
-                                    <Grid item={true}  style={mehironInGrid}>
+                                    <Grid item={true} style={mehironInGrid}>
 
-                                        <CardActionArea   style={mehiromInCard}>
-                                            <img src={require(`../images/fam.jpg`).default} width="100%" />
+                                        <CardActionArea style={mehiromInCard}>
+                                            <img src={require(`../images/fam.jpg`).default} width="100%"  />
 
                                             <CardContent>
 
@@ -623,7 +638,7 @@ class MehironimMobile extends React.Component {
                                     <Grid item={true} style={mehironInGrid}>
 
 
-                                        <CardActionArea   style={mehiromInCard}>
+                                        <CardActionArea style={mehiromInCard}>
                                             <img src={require(`../images/preg.jpg`).default} width="100%" />
 
                                             <CardContent>
@@ -645,7 +660,7 @@ class MehironimMobile extends React.Component {
                                                         <Divider variant="inset" component="li" />
 
 
-                                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
+                                                    <h3>חבילה מורחבת- 600 ש"ח</h3>
                                                         מיקום :סטודיו או צילומי חוץ לבחירה
                                                         צילום ההריונית ובן הזוג.
                                                         משך זמן צילום: עד שעה
@@ -655,7 +670,7 @@ class MehironimMobile extends React.Component {
 
                                                         <Divider variant="inset" component="li" />
 
-                                                                    <h3>תוספות</h3>
+                                                    <h3>תוספות</h3>
 
                                                             * ילד בתוספת 100 ש"ח לכל חבילה.
                                                             * חומר גלם לא נשלח.
