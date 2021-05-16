@@ -1,9 +1,29 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBInput } from 'mdbreact';
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+import { create } from 'jss';
+import rtl from 'jss-rtl';
+import { StylesProvider, jssPreset } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+
+const theme = createMuiTheme({
+  direction: 'rtl', // Both here and <body dir="rtl">
+});
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: '25ch',
+    },
+  },
+}));
 
 export default function ContactUs() {
+  const classes = useStyles();
 
   function sendEmail(e) {
     e.preventDefault();
@@ -76,22 +96,24 @@ export default function ContactUs() {
                   כתבו לי
                   </h3>
                       <MDBRow  >
-                        <MDBCol md="6" >
-                          <div className="md-form mb-0 " >
-                            <MDBInput 
-                            
-                              name="from_name" type="text"
-                              id="form-contact-name"
-                              label="שם פרטי"
+                        
+                        <MDBCol md="6">
+                          <div className="md-form mb-0" dir="rtl">
+                            <TextField
+                            placeholder="אימייל"
+                              type="email" name="email"
+                              id="form-contact-email"
+                              fullWidth
                             />
                           </div>
                         </MDBCol>
-                        <MDBCol md="6">
-                          <div className="md-form mb-0">
-                            <MDBInput
-                              type="email" name="email"
-                              id="form-contact-email"
-                              label="אימייל"
+                        <MDBCol md="6" >
+                          <div className="md-form mb-0 " dir="rtl" >
+                          <TextField 
+                             placeholder="שם פרטי"
+                              name="from_name" type="text"
+                              id="form-contact-name"
+                              fullWidth
                             />
                           </div>
                         </MDBCol>
@@ -99,12 +121,13 @@ export default function ContactUs() {
 
                       <MDBRow>
                         <MDBCol md="12">
-                          <div className="md-form mb-0">
-                            <MDBInput
+                          <div className="md-form mb-0" dir="rtl">
+                            <TextField
+                            fullWidth
                               name="message"
                               type="textarea"
                               id="form-contact-message"
-                              label="הודעה"
+                              placeholder="הודעה"
                             />
                             <div className="text-center mt-4">
                               <MDBBtn color="warning" outline type="submit" value="Send">

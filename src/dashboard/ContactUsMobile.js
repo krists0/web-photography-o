@@ -1,7 +1,15 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBInput } from 'mdbreact';
+import { create } from 'jss';
+import rtl from 'jss-rtl';
+import { StylesProvider, jssPreset } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
+const theme = createMuiTheme({
+  direction: 'rtl', // Both here and <body dir="rtl">
+});
 
 export default function ContactUsMobile() {
 
@@ -33,35 +41,39 @@ export default function ContactUsMobile() {
                     <MDBIcon icon="envelope" className="pr-2" />
                כתבו לי
               </h3>
-                  <MDBRow>
-                    <MDBCol md="6">
-                      <div className="md-form mb-0">
-                        <MDBInput
-                          name="from_name" type="text"
-                          id="form-contact-name"
-                          label="שם פרטי"
-                        />
-                      </div>
-                    </MDBCol>
-                    <MDBCol md="6">
-                      <div className="md-form mb-0">
-                        <MDBInput
-                          type="email" name="email"
-                          id="form-contact-email"
-                          label="אימייל"
-                        />
-                      </div>
-                    </MDBCol>
-                  </MDBRow>
+              <MDBRow  >
+              <MDBCol md="6" >
+                          <div className="md-form mb-0 " dir="rtl" >
+                          <TextField 
+                             placeholder="שם פרטי"
+                              name="from_name" type="text"
+                              id="form-contact-name"
+                              fullWidth
+                            />
+                          </div>
+                        </MDBCol>
+                        <MDBCol md="6">
+                          <div className="md-form mb-0" dir="rtl">
+                            <TextField
+                            placeholder="אימייל"
+                              type="email" name="email"
+                              id="form-contact-email"
+                              fullWidth
+                            />
+                          </div>
+                        </MDBCol>
+                       
+                      </MDBRow>
 
                   <MDBRow>
                     <MDBCol md="12">
-                      <div className="md-form mb-0">
-                        <MDBInput
+                      <div className="md-form mb-0" dir="rtl">
+                        <TextField
                           name="message"
                           type="textarea"
                           id="form-contact-message"
-                          label="הודעה"
+                          placeholder="הודעה"
+                          fullWidth
                         />
                         <div className="text-center mt-4">
                           <MDBBtn color="warning" outline type="submit" value="Send">

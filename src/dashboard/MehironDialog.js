@@ -30,7 +30,7 @@ import DialogconMobile from './DialogconMobile';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-
+import titleme from "../images/mehir.jpg";
 import Slide from '@material-ui/core/Slide';
 import ContactUsMobile from './ContactUsMobile';
 const mehironOut = {
@@ -150,7 +150,7 @@ class MehironDialog extends React.Component {
                 <Grid item={true} >
                     <div style={{
                     }}>
-                        <img src={titme} alt="מחירון" style={{ width: "100%", justify: "center", position: "flex", backgroundImage: "cover" }} />
+                        <img src={titleme} alt="מחירון" style={{ width: "100%",height:"100px", justify: "center", position: "flex", backgroundImage: "cover" }} />
                     </div>
 
                     <CardHeader ></CardHeader>

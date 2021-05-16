@@ -15,6 +15,7 @@
     "get-google-fonts": "^1.2.2",
     "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.6.0",
+    "jss-rtl": "^0.3.0",
     "mdbreact": "^5.0.2",
     "react": "^17.0.1",
     "react-device-detect": "^1.17.0",
