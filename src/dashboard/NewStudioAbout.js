@@ -13,10 +13,10 @@ const NewStudioAbout = () => {
         <MDBRow>
             <MDBCol style={{ maxWidth: "100%" }}>
                 <MDBCard reverse>
-                    <img src={sabout} alt="studio" />
+                    <img src={sabout} alt="studio" style={{width:"100%"}} />
                    <MobileView>
                     <p>
-                      <MDBIcon style={{color:"#5F3301"}} icon="phone" className="pr-2" />0525321247
+                      <MDBIcon style={{color:"#5F3301"}} icon="phone" className="pr-1" />0525321247
                   </p>
                    </MobileView>
 

@@ -126,8 +126,8 @@ export default function Main(props) {
                             }} />
                               <MobileView>
                           
-                          <MDBIcon style={{top:"0%",position:"absolute",right:"80%"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
-                          <MDBIcon style={{top:"0%",position:"absolute",right:"86%"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+                          <MDBIcon style={{top:"0.5%",position:"absolute",right:"80%"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+                          <MDBIcon style={{top:"0.5%",position:"absolute",right:"86%"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
                                               
                       </MobileView>
 
@@ -148,9 +148,20 @@ export default function Main(props) {
 
                     <img src={info} alt="info"
                         style={{ width: "100%", right: "0", left: "0", top: "8px", }} />
+                          <div className={classes.description}
+
+style={{
+
+    flexGrow: "1",
+    maxWidth: "600px",
+    overflow: 'hidden',
+}}
+
+>
                     <NewStudioAbout>
                     
                     </NewStudioAbout>
+                    </div>
                          <CarouselPage />
                 </MobileView>
 
