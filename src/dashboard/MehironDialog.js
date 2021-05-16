@@ -389,7 +389,7 @@ class MehironDialog extends React.Component {
                                                     שני סטים של צילומים עם אביזרים מתחלפים
                                                     החלפה של שני פרטי לבוש
                                                     כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                    <Divider variant="inset" component="li" />
+                                                    <Divider variant="inset"  />
 
 
                                                         <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -398,7 +398,7 @@ class MehironDialog extends React.Component {
                                                     3 סטים של צילומים עם אביזרים מתחלפים
                                                     החלפה של 3 פרטי לבוש
                                                     כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה
-                                                    <Divider variant="inset" component="li" />
+                                                    <Divider variant="inset" />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -448,7 +448,7 @@ class MehironDialog extends React.Component {
                                                         שני סטים של צילומים עם אביזרים מתחלפים
                                                         החלפה של שני פרטי לבוש
                                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset"  />
 
 
                                                                     <h3>חבילה מורחבת- 500 ש"ח</h3>
@@ -457,7 +457,7 @@ class MehironDialog extends React.Component {
                                                                 3 סטים של צילומים עם אביזרים מתחלפים
                                                                 החלפה של 3 פרטי לבוש
                                                                 כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset"  />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -509,7 +509,7 @@ class MehironDialog extends React.Component {
                                                         החלפה של שני פרטי לבוש
                                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset"  />
 
 
                                                                     <h3>חבילה מורחבת- 500 ש"ח</h3>
@@ -520,7 +520,7 @@ class MehironDialog extends React.Component {
                                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                        <Divider variant="inset" component="li" />
+                                        <Divider variant="inset"  />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -576,7 +576,7 @@ class MehironDialog extends React.Component {
 
 
 
-                                            <Divider variant="inset" component="li" />
+                                            <Divider variant="inset"  />
 
                                                     <h3>חבילה מורחבת- סמאש קייק 500 ש"ח</h3>
                                             צילום הילד/ה + בני המשפחה
@@ -586,7 +586,7 @@ class MehironDialog extends React.Component {
 
 
 
-                                            <Divider variant="inset" component="li" />
+                                            <Divider variant="inset"  />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -635,7 +635,7 @@ class MehironDialog extends React.Component {
                                                                 משך זמן צילום : שעה
                                             שני לוקיישנים לבחירה
                                             כל התמונות (עד 20) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                                                    <Divider variant="inset" component="li" />
+                                                                                    <Divider variant="inset" />
 
 
                                                             <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -643,7 +643,7 @@ class MehironDialog extends React.Component {
                                                     שלוש לוקיישנים לבחירה
                                                     כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                            <Divider variant="inset" component="li" />
+                                            <Divider variant="inset" />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -696,7 +696,7 @@ class MehironDialog extends React.Component {
                                                             שלוש לוקיישנים לבחירה
                                                             כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
-                                                            <Divider variant="inset" component="li" />
+                                                            <Divider variant="inset"  />
 
 
                                                                         <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -704,7 +704,7 @@ class MehironDialog extends React.Component {
                                                             משך זמן צילום: עד שעה וחצי
                                                             שלוש לוקיישנים לבחירה
                                                             כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                            <Divider variant="inset" component="li" />
+                                                            <Divider variant="inset"  />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 
@@ -753,7 +753,7 @@ class MehironDialog extends React.Component {
                                                         משך זמן צילום : שעה
                                                         שני סטים של צילומים עם ביגוד מתחלף
                                                         כל התמונות (עד 30) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset"  />
 
 
                                                     <h3>חבילה מורחבת- 600 ש"ח</h3>
@@ -764,7 +764,7 @@ class MehironDialog extends React.Component {
                                                         כל התמונות (עד 40) ישלחו באיכות הדפסה גבוהה למייל לאחר סינון ועריכה.
 
 
-                                                        <Divider variant="inset" component="li" />
+                                                        <Divider variant="inset"  />
                                                         <h3>תוספות</h3>
 
                                                                <p>אח בתוספת 100 ש"ח לכל חבילה</p> 

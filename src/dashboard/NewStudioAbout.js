@@ -14,17 +14,11 @@ const NewStudioAbout = () => {
             <MDBCol style={{ maxWidth: "40rem" }}>
                 <MDBCard reverse>
                     <img src={sabout} alt="studio" />
-                    <MobileView>
-                        <MDBBtn outline color="primary" className="w-10 p-3" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} >
-                            <MDBIcon fab icon="facebook-f" className="light-blue-text" />
-                                        Facebook
-                                        </MDBBtn>
-                        <MDBBtn color="default" outline color="pink" className="w-10 p-3" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')}>
-                            <MDBIcon icon="comments" className="pr-2" />
-                                    Instagram
-
-                                </MDBBtn>
-                    </MobileView>
+                   <MobileView>
+                    <p>
+                      <MDBIcon style={{color:"#5F3301"}} icon="phone" className="pr-2" />0525321247
+                  </p>
+                   </MobileView>
 
                 </MDBCard>
             </MDBCol>

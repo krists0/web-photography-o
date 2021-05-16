@@ -6,7 +6,6 @@ import Link from "@material-ui/core/Link";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar';
-
 import Galery from "../dashboard/Galery";
 import Mehiron from "../dashboard/Mehiron";
 import Album from "../dashboard/Albums";
@@ -14,7 +13,6 @@ import AddAlbums from "./AddAlbums";
 import back from "../images/fam.jpg";
 import '../react-slideshow-image/styles.css';
 import Main from "./Main";
-
 
 function TabContainer(props) {
     return (
@@ -88,10 +86,8 @@ class HomeP extends Component {
 
     return (
         <div   style={{background:'#fff5e6',}} >
-        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'fixed'}}
-
->
-
+        <AppBar  position="static"  style={{ backgroundColor: '#c1b797',top:'50',float: 'right',position: 'fixed'}}>
+                       
             <Tabs  centered  value={value} onChange={this.handleChange}
             style={{color:"#424242",}}
             >
@@ -107,6 +103,8 @@ class HomeP extends Component {
 
                     */
                } 
+
+                    
             </Tabs>
         </AppBar>
 

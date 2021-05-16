@@ -11,7 +11,7 @@ import CarouselPage from "./CarouselPage";
 
 import info from "../images/info.jpg";
 import NewStudioAbout from "./NewStudioAbout";
-import { MDBIcon, MDBBtn } from 'mdbreact';
+import {MDBCardBody, MDBIcon, MDBBtn } from 'mdbreact';
 
 
 const useStyles = makeStyles(styles);
@@ -37,26 +37,52 @@ export default function Main(props) {
     return (
         <div >
 
-
-            <div small="true" filter="true" image={require("../images/profile.jpg")}
-
-            />
-
-
-
+                   
             {/**this is the description part */}
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <BrowserView>
                     <div style={{ width: "40%", right: "-5%", position: "absolute", top: "150px" }}>
-                        <MDBBtn outline color="primary" className="w-25 p-3" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} >
-                            <MDBIcon fab icon="facebook-f" className="light-blue-text" />
-                                Facebook
-                                </MDBBtn>
-                        <MDBBtn color="default" outline color="pink" className="w-25 p-3" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')}>
-                            <MDBIcon icon="comments" className="pr-2" />
-                            Instagram
+                        
+                        <p>
+                      
+                <ul className="text-lg-center grey-text  list-unstyled ml-4">
+                  <li>
+                    <p>
+                      <MDBIcon icon="map-marker-alt" className="pr-2" />
+                   ירוחם
+                  </p>
+                  </li>
+                  <li>
+                    <p>
+                      <MDBIcon icon="phone" className="pr-2" />0525321247
+                  </p>
+                  </li>
+                  <li>
+                    <p>
 
-                        </MDBBtn>
+                      <h4>Ortalcohen.p@gmail.com</h4>
+                    </p>
+                  </li>
+                     <li className="list-inline-item ">
+                    <a href="#!" className="p-6 fa-lg w-ic ">
+                        
+                        <MDBIcon style={{color:"grey"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+                        <h6 style={{color:"grey"}}> פייסבוק</h6>
+                        
+                        <MDBIcon style={{color:"grey"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+                        <h6 style={{color:"grey"}}>
+                        אינסטגרם
+                        </h6>
+                       
+                    </a>
+                    </li>
+                  
+                </ul>
+                
+                <hr className="hr-light my-4" />
+                
+             
+                  </p>
                     </div>
                 </BrowserView>
                 
@@ -98,7 +124,12 @@ export default function Main(props) {
                                 right: "1%",
 
                             }} />
-                             
+                              <MobileView>
+                          
+                          <MDBIcon style={{top:"1%",position:"absolute",right:"80%"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+                          <MDBIcon style={{top:"1%",position:"absolute",right:"86%"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+                                              
+                      </MobileView>
 
                         </MobileView>
 

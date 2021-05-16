@@ -25,7 +25,7 @@ import MuiDialogContent from '@material-ui/core/DialogContent';
 import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-
+import titleme from "../images/mehir.jpg";
 
 
 const mehironOut = {
@@ -135,7 +135,7 @@ class Mehironim extends React.Component {
       <div>
         <Grid item={true} >
           <div style={{ width: "100%", height: "200px", }}>
-            <img src={titme} alt="מחירון" style={{ height: "150px" }} />
+            <img src={titleme} alt="מחירון" style={{ height: "150px" }} />
           </div>
 
           <CardHeader ></CardHeader>
