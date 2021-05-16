@@ -11,7 +11,7 @@ const NewStudioAbout = () => {
     }
     return (
         <MDBRow>
-            <MDBCol style={{ maxWidth: "40rem" }}>
+            <MDBCol style={{ maxWidth: "100%" }}>
                 <MDBCard reverse>
                     <img src={sabout} alt="studio" />
                    <MobileView>

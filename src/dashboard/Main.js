@@ -126,8 +126,8 @@ export default function Main(props) {
                             }} />
                               <MobileView>
                           
-                          <MDBIcon style={{top:"1%",position:"absolute",right:"80%"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
-                          <MDBIcon style={{top:"1%",position:"absolute",right:"86%"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+                          <MDBIcon style={{top:"0%",position:"absolute",right:"80%"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+                          <MDBIcon style={{top:"0%",position:"absolute",right:"86%"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
                                               
                       </MobileView>
 
