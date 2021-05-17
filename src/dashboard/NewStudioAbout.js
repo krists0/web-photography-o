@@ -1,14 +1,10 @@
 import React from 'react';
-import { MDBCard, MDBIcon, MDBBtn, MDBRow, MDBCol, } from 'mdbreact';
-import studio from "../images/studio(2).jpg";
-import { BrowserView, MobileView } from 'react-device-detect';
+import { MDBCard, MDBIcon,MDBRow, MDBCol, } from 'mdbreact';
+import { MobileView } from 'react-device-detect';
 import sabout from "../images/sabout.jpg";
 
 const NewStudioAbout = () => {
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-    }
+    
     return (
         <MDBRow>
             <MDBCol style={{ maxWidth: "100%" }}>

@@ -27,30 +27,12 @@ TabContainer.propTypes = {
 };
 
 
-
-
-const styles = theme => ({
-    root: {
-        flexGrow: 1,
-        backgroundColor: theme.palette.background.paper,
-        maxWidth: 1800,
-        
-        overflow: 'hidden',
-
-    },
-   
-    textDense: {},
-  
-
-});
-
-
 function MadeWithLove() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Built by '}
             <Link color="inherit" href="https://material-ui.com/">
-                Christina 
+                Christina Tsivileva
             </Link>
            
         </Typography>
@@ -79,7 +61,6 @@ class HomeP extends Component {
 
   render() {
    
-    const { classes,...other } = this.props;
      const { value } = this.state;
     
         

@@ -1,15 +1,10 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBInput } from 'mdbreact';
-import { create } from 'jss';
-import rtl from 'jss-rtl';
-import { StylesProvider, jssPreset } from '@material-ui/core/styles';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody} from 'mdbreact';
+
 import TextField from '@material-ui/core/TextField';
 
-const theme = createMuiTheme({
-  direction: 'rtl', // Both here and <body dir="rtl">
-});
+
 
 export default function ContactUsMobile() {
 

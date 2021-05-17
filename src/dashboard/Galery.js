@@ -1,16 +1,10 @@
 
 import React, { Component } from 'react';
-
-
-
 import $ from 'jquery'; 
-
-//import ImgDisplay from "./ImgDisplay";
-//import Googleg from "../../Googleg";
 import ShowGallery from "./ShowGallery";
-//import List from "./List";
+
 import Glitch from "../../src/Glitch";
-//const array=[];
+
 class Galery extends Component {
   constructor(props) {
     super(props);
@@ -23,11 +17,10 @@ class Galery extends Component {
   componentDidMount(){
     var i;
   
-    //$(document).ready(function() {
       let imagesPreview = function(input, placeToInsertImagePreview) {
-       // console.log("++++++++++++files_id"+input.filesAmount);
+
         if (input.files) {
-       //   console.log("===="+input.files);
+      
           let filesAmount = input.files.length;
           for (i = 0; i < filesAmount; i++) {
             let reader = new FileReader();
@@ -54,13 +47,6 @@ class Galery extends Component {
   }
 
     render() {
-        const {classes} = this.props;
-       // const pics=this.props;
-       // console.log("===>"+this.props.photos);
-        
-
-        const file = this.props.file;
-      
         return (
           
           <div>

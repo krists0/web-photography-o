@@ -11,7 +11,7 @@ import CarouselPage from "./CarouselPage";
 
 import info from "../images/info.jpg";
 import NewStudioAbout from "./NewStudioAbout";
-import {MDBCardBody, MDBIcon, MDBBtn } from 'mdbreact';
+import {MDBIcon } from 'mdbreact';
 
 
 const useStyles = makeStyles(styles);
@@ -42,26 +42,24 @@ export default function Main(props) {
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <BrowserView>
                     <div style={{ width: "40%", right: "-5%", position: "absolute", top: "150px" }}>
-                        
-                        <p>
-                      
+                       
                 <ul className="text-lg-center grey-text  list-unstyled ml-4">
                   <li>
-                    <p>
+                   
                       <MDBIcon icon="map-marker-alt" className="pr-2" />
                    ירוחם
-                  </p>
+                 
                   </li>
                   <li>
-                    <p>
+                   
                       <MDBIcon icon="phone" className="pr-2" />0525321247
-                  </p>
+                  
                   </li>
                   <li>
-                    <p>
+                   
 
                       <h4>Ortalcohen.p@gmail.com</h4>
-                    </p>
+                    
                   </li>
                      <li className="list-inline-item ">
                     <a href="#!" className="p-6 fa-lg w-ic ">
@@ -82,7 +80,7 @@ export default function Main(props) {
                 <hr className="hr-light my-4" />
                 
              
-                  </p>
+               
                     </div>
                 </BrowserView>
                 

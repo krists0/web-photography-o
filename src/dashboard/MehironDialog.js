@@ -1,38 +1,24 @@
 
 
-import React, { Component } from 'react';
+import React from 'react';
 import Button from '@material-ui/core/Button';
-
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-
 import CardHeader from '@material-ui/core/CardHeader';
-
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import ContactUs from "./ContactUs";
 import Divider from '@material-ui/core/Divider';
-import titme from "../images/tit.jpg";
-import Dialogcon from "./Dialogcon";
-
-import { withStyles } from '@material-ui/core/styles';
 
 import Dialog from '@material-ui/core/Dialog';
-import MuiDialogTitle from '@material-ui/core/DialogTitle';
-import MuiDialogContent from '@material-ui/core/DialogContent';
-import MuiDialogActions from '@material-ui/core/DialogActions';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import DialogconMobile from './DialogconMobile';
-
-
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import titleme from "../images/mehir.jpg";
 import Slide from '@material-ui/core/Slide';
-import ContactUsMobile from './ContactUsMobile';
+
 const mehironOut = {
 
     borderWidth: 1,
@@ -58,19 +44,7 @@ const mehiromInCard = {
     alignItems: 'center'
 };
 
-const styles = (theme) => ({
-    root: {
-        margin: 0,
-        padding: theme.spacing(2),
-    },
-    closeButton: {
-        position: 'absolute',
-        right: theme.spacing(1),
-        top: theme.spacing(1),
-        color: theme.palette.grey[500],
-    },
 
-});
 
 
 
@@ -78,41 +52,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const DialogTitle = withStyles(styles)((props) => {
-    const { children, classes, onClose, ...other } = props;
-    return (
-        <MuiDialogTitle disableTypography className={classes.root} {...other}>
-            <Typography variant="h6">{children}</Typography>
-            {onClose ? (
-                <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
-                    <CloseIcon />
-                </IconButton>
-            ) : null}
-        </MuiDialogTitle>
-    );
-});
 
-const DialogContent = withStyles((theme) => ({
-    root: {
-        padding: theme.spacing(2),
-    },
-}))(MuiDialogContent);
-
-const DialogActions = withStyles((theme) => ({
-    root: {
-        margin: 0,
-        padding: theme.spacing(1),
-    },
-}))(MuiDialogActions);
-
-const gridList = {
-    width: 250,
-    height: 50,
-    backgroundColor: "none",
-    justifyContent: "center",
-    opacity: 0.5,
-
-};
 
 
 
@@ -171,7 +111,7 @@ class MehironDialog extends React.Component {
                             key={index} onClick={() => this.onClick(index)}
                         >
                             {(() => {
-                                if (el.name == "NEWBORN") {
+                                if (el.name === "NEWBORN") {
                                     return (
                                         <div >
 
@@ -182,7 +122,7 @@ class MehironDialog extends React.Component {
                                                 style={mehironOut}
 
 
-                                                alt="my image" />
+                                                alt="1" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -201,12 +141,12 @@ class MehironDialog extends React.Component {
                                         </div>
                                     )
 
-                                } else if (el.name == "2-6") {
+                                } else if (el.name === "2-6") {
                                     return (
                                         <div>
 
                                             <img src={require(`../images/three.jpg`).default}
-                                                style={mehironOut} alt="my image" />
+                                                style={mehironOut} alt="2" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -224,10 +164,10 @@ class MehironDialog extends React.Component {
                                             </span>
                                         </div>
                                     )
-                                } else if (el.name == "6-9") {
+                                } else if (el.name === "6-9") {
                                     return (
                                         <div> <img src={require(`../images/six.jpg`).default}
-                                            style={mehironOut} alt="my image" />
+                                            style={mehironOut} alt="3" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -246,10 +186,10 @@ class MehironDialog extends React.Component {
                                         </div>
                                     )
                                 }
-                                else if (el.name == "ONE") {
+                                else if (el.name === "ONE") {
                                     return (
                                         <div> <img src={require(`../images/shana.jpg`).default}
-                                            style={mehironOut} alt="my image" />
+                                            style={mehironOut} alt="4" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -268,10 +208,10 @@ class MehironDialog extends React.Component {
                                         </div>
                                     )
                                 }
-                                else if (el.name == "MITSVA") {
+                                else if (el.name === "MITSVA") {
                                     return (
                                         <div> <img src={require(`../images/mitsva.jpg`).default}
-                                            style={mehironOut} alt="my image" />
+                                            style={mehironOut} alt="5e" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -291,10 +231,10 @@ class MehironDialog extends React.Component {
                                         </div>
                                     )
                                 }
-                                else if (el.name == "OPEN") {
+                                else if (el.name === "OPEN") {
                                     return (
                                         <div> <img src={require(`../images/fam.jpg`).default}
-                                            style={mehironOut} alt="my image" />
+                                            style={mehironOut} alt="6" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -314,11 +254,11 @@ class MehironDialog extends React.Component {
                                         </div>
                                     )
                                 }
-                                else if (el.name == "PRE") {
+                                else if (el.name === "PRE") {
                                     return (
                                         <div> <img src={require(`../images/preg.jpg`).default}
                                             style={mehironOut}
-                                            alt="my image" />
+                                            alt="7" />
                                             <span >
                                                 <h7
                                                     style={{
@@ -349,10 +289,10 @@ class MehironDialog extends React.Component {
                 </Grid>
 
                 {this.state.arr.map((el, index) =>
-                    <div   >
+                    <div  key={index} >
 
                         {(() => {
-                            if (el.name == "NEWBORN" && el.isActive) {
+                            if (el.name === "NEWBORN" && el.isActive) {
                                 return (
 
                                     <Grid item={true} style={mehironInGrid}>
@@ -372,7 +312,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                                <img src={require(`../images/elon2.jpg`).default} width="100%" />
+                                                <img alt="elon" src={require(`../images/elon2.jpg`).default} width="100%" />
 
                                                 <CardContent>
 
@@ -413,7 +353,7 @@ class MehironDialog extends React.Component {
                                     </Grid>
                                 )
 
-                            } else if (el.name == "2-6" && el.isActive) {
+                            } else if (el.name === "2-6" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                           <Dialog fullScreen open={true} TransitionComponent={Transition}>
@@ -431,7 +371,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                                <img src={require(`../images/three.jpg`).default} width="100%" />
+                                                <img alt="three" src={require(`../images/three.jpg`).default} width="100%" />
                                                   <CardContent>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
@@ -472,7 +412,7 @@ class MehironDialog extends React.Component {
                                        
                                     </Grid>
                                 )
-                            } else if (el.name == "6-9" && el.isActive) {
+                            } else if (el.name === "6-9" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                         <Dialog fullScreen open={true} TransitionComponent={Transition}>
@@ -490,7 +430,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                              <img src={require(`../images/six.jpg`).default} width="100%" />
+                                              <img alt="six" src={require(`../images/six.jpg`).default} width="100%" />
 
                                                   <CardContent>
 
@@ -535,7 +475,7 @@ class MehironDialog extends React.Component {
 
                                     </Grid>
                                 )
-                            } else if (el.name == "ONE" && el.isActive) {
+                            } else if (el.name === "ONE" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
 
@@ -554,7 +494,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                             <img src={require(`../images/IMG_9332.jpg`).default} width="100%" />
+                                             <img alt="one" src={require(`../images/IMG_9332.jpg`).default} width="100%" />
 
 
                                                   <CardContent>
@@ -602,7 +542,7 @@ class MehironDialog extends React.Component {
                                        
                                     </Grid>
                                 )
-                            } else if (el.name == "MITSVA" && el.isActive) {
+                            } else if (el.name === "MITSVA" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                              <Dialog fullScreen open={true} TransitionComponent={Transition}>
@@ -620,7 +560,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                             <img src={require(`../images/mitsva3.jpg`).default} width="100%" />
+                                             <img alt="mitsva" src={require(`../images/mitsva3.jpg`).default} width="100%" />
                                              <CardContent>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
@@ -658,7 +598,7 @@ class MehironDialog extends React.Component {
                                         
                                     </Grid>
                                 )
-                            } else if (el.name == "OPEN" && el.isActive) {
+                            } else if (el.name === "OPEN" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                            <Dialog fullScreen open={true} TransitionComponent={Transition}>
@@ -676,7 +616,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                               <img src={require(`../images/fam.jpg`).default} width="100%" />
+                                               <img alt="family" src={require(`../images/fam.jpg`).default} width="100%" />
 
                                          
                                              <CardContent>
@@ -718,7 +658,7 @@ class MehironDialog extends React.Component {
                                         
                                     </Grid>
                                 )
-                            } else if (el.name == "PRE" && el.isActive) {
+                            } else if (el.name === "PRE" && el.isActive) {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                             <Dialog fullScreen open={true} TransitionComponent={Transition}>
@@ -736,7 +676,7 @@ class MehironDialog extends React.Component {
                                             <CardActionArea
                                                 style={mehiromInCard}
                                             >
-                                                <img src={require(`../images/preg.jpg`).default} width="100%" />
+                                                <img alt="herion" src={require(`../images/preg.jpg`).default} width="100%" />
 
                                              <CardContent>
 

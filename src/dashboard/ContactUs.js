@@ -1,29 +1,11 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, MDBInput } from 'mdbreact';
+import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody, } from 'mdbreact';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
-import { create } from 'jss';
-import rtl from 'jss-rtl';
-import { StylesProvider, jssPreset } from '@material-ui/core/styles';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
-
-const theme = createMuiTheme({
-  direction: 'rtl', // Both here and <body dir="rtl">
-});
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '25ch',
-    },
-  },
-}));
 
 export default function ContactUs() {
-  const classes = useStyles();
+  
 
   function sendEmail(e) {
     e.preventDefault();
@@ -41,10 +23,10 @@ export default function ContactUs() {
     if (newWindow) newWindow.opener = null
   }
   return (
-    <div style={{position:"flex"}}>
+    <div style={{position:"flex",width:"100%"}}>
 
       <section className="contact-section my-5" >
-        <MDBCard style={{ width: "1450px" }}>
+        <MDBCard style={{ width: "100%" }}>
           <MDBRow>
              <MDBCol lg="4" >
               <MDBCardBody className="contact text-right h-100 grey-text" >
@@ -52,23 +34,22 @@ export default function ContactUs() {
 
                 <ul className="text-lg-right list-unstyled ml-4">
                   <li>
-                    <p>
-                      
+                   
                    ירוחם
                    <MDBIcon icon="map-marker-alt" className="pr-2" />
-                  </p>
+                 
                   </li>
                   <li>
-                    <p>
+                   
                       0525321247
                       <MDBIcon icon="phone" className="pr-2" />
-                  </p>
+                 
                   </li>
                   <li>
-                    <p>
+                   
 
-                      <h4>Ortalcohen.p@gmail.com</h4>
-                    </p>
+                      Ortalcohen.p@gmail.com
+                 
                   </li>
                 </ul>
                 <li className="list-inline-item ">

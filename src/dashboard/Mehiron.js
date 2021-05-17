@@ -5,6 +5,8 @@ import { BrowserView, MobileView } from 'react-device-detect';
 import Mehironim from "./Mehironim";
 
 import MehironDialog from './MehironDialog';
+
+
 class Mehiron extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +23,7 @@ class Mehiron extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+   
 
     return (
       <div>

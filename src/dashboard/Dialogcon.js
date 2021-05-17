@@ -40,7 +40,8 @@ export default function Dialogcon() {
 
   return (
     <div>
-      <Button variant="outlined" color="grey"  style={{
+      <Button variant="outlined"   style={{
+                color:"#000000",
                         border:"trans",
                         variant:"outlined",
                         outline:"0",
