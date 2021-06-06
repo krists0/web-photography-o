@@ -1,5 +1,52 @@
 export const photos = [
- 
+    {
+    src: require(`../images/child1.jpg`).default,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/child2.jpg`).default,
+    width: 1,
+    height: 1
+  },
+  {
+    src: require(`../images/family2.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src: require(`../images/family3.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src:  require(`../images/family4.jpg`).default,
+    width: 3,
+    height: 4,
+    
+  },
+  
+  {
+    src: require(`../images/newborn1.jpg`).default,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/newborn2.jpg`).default,
+    width: 3,
+    height: 4
+  },
+  {
+    src: require(`../images/child3.jpg`).default ,
+    width: 4,
+    height: 3
+  },
+  {
+    src: require(`../images/smash3.jpg`).default,
+    width: 4,
+    height: 3
+  },
+ //
   {
     src: require(`../images/ariel.jpg`).default,
     width: 4,
@@ -47,5 +94,7 @@ export const photos = [
     width: 4,
     height: 3
   },
+ ///
  
+
 ];

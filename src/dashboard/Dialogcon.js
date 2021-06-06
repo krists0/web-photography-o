@@ -14,7 +14,7 @@ import ContactUs from './ContactUs';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',
-    backgroundColor:'#c1b797',
+    backgroundColor:'white',
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -41,7 +41,7 @@ export default function Dialogcon() {
   return (
     <div>
       <Button variant="outlined"   style={{
-                color:"#000000",
+                color:"#00000",
                         border:"trans",
                         variant:"outlined",
                         outline:"0",
@@ -51,17 +51,20 @@ export default function Dialogcon() {
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-              <CloseIcon />
+            <IconButton  edge="start" color="inherit" onClick={handleClose} aria-label="close">
+              <CloseIcon style={{color:"#9e9e9e"}}/>
             </IconButton>
             <Typography variant="h6" className={classes.title}>
+             <h3 style={{color:"#9e9e9e"}}>
               Ortal cohen photograpy
+             </h3>
+             
             </Typography>
             <Button style={{                     
                        border:"trans",
                        variant:"outlined",
                        outline:"0",
-                   }}  color="inherit"  onClick={handleClose}>
+                   }}  color="#9e9e9e"  onClick={handleClose}>
               סגור
             </Button>
           </Toolbar>

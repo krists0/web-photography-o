@@ -1,11 +1,12 @@
 
 import './App.css';
 
-import HomeP from "./dashboard/HomeP";
+import HomeP2 from "./dashboard/HomeP2";
 function App() {
   return (
     <div className="App">
-      <HomeP></HomeP>
+      <HomeP2></HomeP2>
+     
     </div>
   );
 }

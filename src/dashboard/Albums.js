@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 
 import ContactUs from "./ContactUs";
-
+import back from "../images/backcontact.png";
 import { BrowserView, MobileView } from 'react-device-detect';
 import ContactUsMobile from './ContactUsMobile';
 class Albums extends Component {
@@ -14,7 +14,10 @@ class Albums extends Component {
         return (
             <div>
                 <BrowserView>
-                    <ContactUs></ContactUs>
+               
+                <ContactUs ></ContactUs>
+          
+                    
                 </BrowserView>
                 <MobileView >
                     <ContactUsMobile/>

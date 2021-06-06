@@ -19,7 +19,7 @@ import titleme from "../images/mehir.jpg";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Slide from '@material-ui/core/Slide';
-
+import back from "../images/backmehir.png";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -29,10 +29,12 @@ const mehironOut = {
   borderWidth: 1,
   alignItems: 'center',
   justifyContent: 'center',
-  width: 350,
-  height: 350,
+  width: 250,
+  height: 250,
   variant: "outlined",
-  borderRadius: 200,
+  borderRadius: 150,
+  
+  
 };
 const mehironInGrid = {
   maxWidth: 1600,
@@ -80,14 +82,11 @@ class Mehironim extends React.Component {
 
     return (
 
-      <div>
+      <div style={{position:"absolute",top:"50px",right:0,left:0, width:"100%",height:700,backgroundImage:`url(${back})`,backgroundPosition:"cover",backgroundSize:"100%"}}>
         <Grid item={true} >
-          <div style={{ width: "100%", height: "200px", }}>
-            <img src={titleme} alt="מחירון" style={{ height: "150px" }} />
-          </div>
+          
 
-          <CardHeader ></CardHeader>
-
+         
           {this.state.arr.map((el, index) =>
 
             <Button className="shadow-box-example hoverable"
@@ -96,6 +95,9 @@ class Mehironim extends React.Component {
                 border: "trans",
                 variant: "outlined",
                 outline: "0",
+                position:"flex",
+                top:"150px"
+
 
                 //   backgroundColor: "#fffacf",
               }}
@@ -292,7 +294,7 @@ class Mehironim extends React.Component {
                     mehironInGrid
                   }>
 <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -351,7 +353,7 @@ class Mehironim extends React.Component {
                   <Grid item={true} style={
                     mehironInGrid
                   }>  <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                  <AppBar style={{backgroundColor:"#c1b797"}}>
+                  <AppBar style={{backgroundColor:"#9e9e9e"}}>
                       <Toolbar>
                           <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                               <CloseIcon />
@@ -410,7 +412,7 @@ class Mehironim extends React.Component {
                     mehironInGrid
                   }>    
                   <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                      <AppBar style={{backgroundColor:"#c1b797"}}>
+                      <AppBar style={{backgroundColor:"#9e9e9e"}}>
                           <Toolbar>
                               <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                   <CloseIcon />
@@ -473,7 +475,7 @@ class Mehironim extends React.Component {
                   <Grid item={true} style={
                     mehironInGrid
                   }>      <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                  <AppBar style={{backgroundColor:"#c1b797"}}>
+                  <AppBar style={{backgroundColor:"#9e9e9e"}}>
                       <Toolbar>
                           <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                               <CloseIcon />
@@ -538,7 +540,7 @@ class Mehironim extends React.Component {
                   <Grid item={true} style={
                     mehironInGrid
                   }> <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                  <AppBar style={{backgroundColor:"#c1b797"}}>
+                  <AppBar style={{backgroundColor:"#9e9e9e"}}>
                       <Toolbar>
                           <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                               <CloseIcon />
@@ -594,7 +596,7 @@ class Mehironim extends React.Component {
                     mehironInGrid
                   }>
                      <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -654,7 +656,7 @@ class Mehironim extends React.Component {
                   <Grid item={true} style={
                     mehironInGrid
                   }>  <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                  <AppBar style={{backgroundColor:"#c1b797"}}>
+                  <AppBar style={{backgroundColor:"#9e9e9e"}}>
                       <Toolbar>
                           <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                               <CloseIcon />
@@ -720,7 +722,7 @@ class Mehironim extends React.Component {
 
         )}
 
-        <CardActions>
+        <CardActions style={{position:"absolute",left:0,right:0,top:"90%"}}>
 
           <Dialogcon />
         </CardActions>

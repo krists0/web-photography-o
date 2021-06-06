@@ -14,7 +14,7 @@ import ContactUsMobile from './ContactUsMobile';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',
-    backgroundColor:'#c1b797',
+    backgroundColor:'#9e9e9e',
   },
   title: {
     marginLeft: theme.spacing(2),
@@ -40,7 +40,8 @@ export default function DialogconMobile() {
 
   return (
     <div style={{}}>
-      <Button variant="outlined" color="grey"  style={{
+      <Button variant="outlined"   style={{
+         
                         border:"trans",
                         variant:"outlined",
                         outline:"0",
@@ -50,11 +51,13 @@ export default function DialogconMobile() {
       <Dialog style={{}} fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-              <CloseIcon />
+            <IconButton edge="start" color="#00000" onClick={handleClose} aria-label="close">
+              <CloseIcon style={{color:"#fafafa"}} />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Ortal cohen photograpy
+            <h5 style={{color:"#fafafa"}}>
+            Ortal cohen photograpy
+            </h5>  
             </Typography>
             <Button style={{                     
                        border:"trans",

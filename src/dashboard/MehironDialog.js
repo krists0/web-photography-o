@@ -16,18 +16,18 @@ import CloseIcon from '@material-ui/icons/Close';
 import DialogconMobile from './DialogconMobile';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import titleme from "../images/mehir.jpg";
+import titleme from "../images/galleryback.png";
 import Slide from '@material-ui/core/Slide';
-
+import back from "../images/whitebackm.png";
 const mehironOut = {
 
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    width: "100%",
-    height: "320px",
+    width: "70%",
+    height: "240px",
 
-    borderRadius: 200,
+    borderRadius: 140,
 };
 const mehironInGrid = {
     width: "88%",
@@ -86,12 +86,9 @@ class MehironDialog extends React.Component {
 
         return (
 
-            <div>
+            <div style={{backgroundImage:`url(${titleme})`,backgroundSize:"100%",position:"absolute",top:"5%"}}>
                 <Grid item={true} >
-                    <div style={{
-                    }}>
-                        <img src={titleme} alt="מחירון" style={{ width: "100%",height:"100px", justify: "center", position: "flex", backgroundImage: "cover" }} />
-                    </div>
+                    
 
                     <CardHeader ></CardHeader>
 
@@ -99,7 +96,7 @@ class MehironDialog extends React.Component {
 
                         <Button className="shadow-box-example hoverable"
                             style={{
-                                borderRadius: "50%",
+                              //  borderRadius: "80%",
                                 border: "trans",
                                 variant: "outlined",
                                 outline: "0",
@@ -297,8 +294,9 @@ class MehironDialog extends React.Component {
 
                                     <Grid item={true} style={mehironInGrid}>
 
-                                      <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                      <Dialog fullScreen open={true} TransitionComponent={Transition}
+                                      >
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -314,7 +312,7 @@ class MehironDialog extends React.Component {
                                             >
                                                 <img alt="elon" src={require(`../images/elon2.jpg`).default} width="100%" />
 
-                                                <CardContent>
+                                                <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                         מחירון ניו בורן
@@ -357,7 +355,7 @@ class MehironDialog extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                           <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -372,7 +370,7 @@ class MehironDialog extends React.Component {
                                                 style={mehiromInCard}
                                             >
                                                 <img alt="three" src={require(`../images/three.jpg`).default} width="100%" />
-                                                  <CardContent>
+                                                  <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון צילומי תינוקות 3-6
@@ -416,7 +414,7 @@ class MehironDialog extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                         <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -432,7 +430,7 @@ class MehironDialog extends React.Component {
                                             >
                                               <img alt="six" src={require(`../images/six.jpg`).default} width="100%" />
 
-                                                  <CardContent>
+                                                  <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון צילומי תינוקות 6-12
@@ -480,7 +478,7 @@ class MehironDialog extends React.Component {
                                     <Grid item={true} style={mehironInGrid}>
 
                                         <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -497,7 +495,7 @@ class MehironDialog extends React.Component {
                                              <img alt="one" src={require(`../images/IMG_9332.jpg`).default} width="100%" />
 
 
-                                                  <CardContent>
+                                                  <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון גיל שנה
@@ -546,7 +544,7 @@ class MehironDialog extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                              <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -561,7 +559,7 @@ class MehironDialog extends React.Component {
                                                 style={mehiromInCard}
                                             >
                                              <img alt="mitsva" src={require(`../images/mitsva3.jpg`).default} width="100%" />
-                                             <CardContent>
+                                             <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון בת מצווה
@@ -602,7 +600,7 @@ class MehironDialog extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                            <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -619,7 +617,7 @@ class MehironDialog extends React.Component {
                                                <img alt="family" src={require(`../images/fam.jpg`).default} width="100%" />
 
                                          
-                                             <CardContent>
+                                             <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון צילומי משפחה
@@ -662,7 +660,7 @@ class MehironDialog extends React.Component {
                                 return (
                                     <Grid item={true} style={mehironInGrid}>
                                             <Dialog fullScreen open={true} TransitionComponent={Transition}>
-                                            <AppBar style={{backgroundColor:"#c1b797"}}>
+                                            <AppBar style={{backgroundColor:"#9e9e9e"}}>
                                                 <Toolbar>
                                                     <IconButton edge="start"  key={index} onClick={() => this.onClick(index)} aria-label="close">
                                                         <CloseIcon />
@@ -678,7 +676,7 @@ class MehironDialog extends React.Component {
                                             >
                                                 <img alt="herion" src={require(`../images/preg.jpg`).default} width="100%" />
 
-                                             <CardContent>
+                                             <CardContent style={{backgroundImage:`url(${back})`,backgroundSize:"100%"}}>
 
                                                     <Typography style={{textAlign:"center"}} gutterBottom variant="h5" component="h2">
                                                     מחירון צילומי הריון

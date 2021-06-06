@@ -7,26 +7,19 @@ const profilePage = {
   profile: {
     textAlign: "right",
     "& img": {
-      maxWidth: "200px",
+      maxWidth: "130px",
       width: "100%",
       margin: "0 auto",
-      transform: "translate3d(0, -50%, 0)",
+      transform: "translate3d(0, 10%, 0)",
       position:"absolute",
-      top:"0%",
-      right:"10%",
+      top:"1%",
+      right:"0%",
+      left:"-80%",
       //transform:"translate(-50%,-50%)",
       
     }
   },
-  description: {
-    
-    margin: "1.071rem auto 0",
-    maxWidth: "600px",
-    //color: "#999",
-    color:"#616161",
-    textAlign: "center !important",
-    marginTop:"5%",
-  },
+ 
   name: {
     marginTop: "-80px"
   },
@@ -34,13 +27,10 @@ const profilePage = {
   main: {
     background: "#FFFFFF",
     position: "relative",
-    zIndex: "3"
+    
   },
   mainRaised: {
-    margin: "-120px 0px 0px",
-    borderRadius: "6px",
-    boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
+    
   },
   title: {
     

@@ -1,9 +1,9 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import {  MDBRow, MDBCol, MDBBtn, MDBIcon, MDBCard, MDBCardBody} from 'mdbreact';
-
+import back from "../images/galleryback.png";
 import TextField from '@material-ui/core/TextField';
-
+import Typography from "@material-ui/core/Typography";
 
 
 export default function ContactUsMobile() {
@@ -19,15 +19,26 @@ export default function ContactUsMobile() {
       });
   }
 
+function MadeWithLove() {
+    return (
+        <Typography variant="body2" color="textSecondary" align="center">
+            {'Built by '}
+           
+                Christina Tsivileva
+          
+           
+        </Typography>
+    );
+}
+
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
   }
   return (
     <div style={{position:"flex"}}>
-
-      <section className="contact-section my-5" >
-        <MDBCard style={{ width: "100%" }}>
+    
+        <MDBCard style={{ width: "100%",backgroundImage:`url(${back})` ,top:"3%",position:"absolute"}}>
           <MDBRow>
             <MDBCol lg="8">
               <MDBCardBody className="form">
@@ -119,12 +130,13 @@ export default function ContactUsMobile() {
 
                     </a>
                   </li>
-                </ul>
+                </ul> 
+                 <MadeWithLove/>
               </MDBCardBody>
             </MDBCol>
           </MDBRow>
         </MDBCard>
-      </section>
+     
     </div>
   );
 }
