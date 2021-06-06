@@ -9,7 +9,7 @@ import profile from "../images/profile.jpg";
 import styles from "../material-kit-react/profilePage";
 import CarouselPage from "./CarouselPage";
 import CarouselPage2 from "./CarouselPage2";
-import info from "../images/info.jpg";
+
 
 import {MDBIcon } from 'mdbreact';
 
@@ -95,20 +95,33 @@ export default function Main2(props) {
 
                <MobileView>
                             <img src={require("../images/Pagem2.png").default} alt="orta1lm" style={{width :"105%",position:"static",left:0,right:0,top:"0"}} />
+                            <li className="list-inline-item " style={{position:"absolute",top:"15%",left:0,right:0,}}>
+                               
+                                <MDBIcon style={{color:"grey"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
+                                <h6 style={{color:"grey"}}> פייסבוק</h6>  
+                                <MDBIcon style={{color:"grey"}} fab icon="instagram" onClick={() => openInNewTab('https://www.instagram.com/ortalcohen_photography/')} />
+                                <h6 style={{color:"grey"}}>
+                                                    אינסטגרם
+                            </h6>
+                                                    
+                              
+                                                
+                           
+                        </li>    
                     <img src={require("../images/Pagem3.png").default} alt="ortal2m"  style={{width :"100%",left:0,right:0,top:0}} />
                         <img src={require("../images/Pagem4.png").default} alt="ortal3m"  style={{width :"100%",left:0,right:0,top:0}} />
                         <img src={require("../images/Pagem5.png").default} alt="ortal4m"   style={{width :"100%",left:0,right:0,top:0}}/>
-                          <img src={require("../images/galleryback.png").default} alt="ortal4m"   style={{width :"100%",left:0,right:0,top:0}}/>
+                       
                         <div style={{
                                                             
-                                    position: "absolute",  top: "54%", left: 0,right:0,
+                                    position: "absolute",  top: "37%", left: 0,right:0,
                                                             }}>
                                                                     <CarouselPage />
                                                             </div>
                                                         
                     <img src={require("../images/Pagem7.png").default} alt="ortal5m"   style={{width :"100%",left:0,right:0,top:0}}/>                                               
                         <img src={require("../images/Pagem9.png").default} alt="ortal6m"   style={{width :"100%",left:0,right:0,top:0}}/>
-                        <li className="list-inline-item " style={{position:"absolute",top:"96%",left:0,right:0,}}>
+                        <li className="list-inline-item " style={{position:"absolute",top:"93%",left:0,right:0,}}>
                             <a href="#!" className="p-6 fa-lg w-ic ">
                             <MDBIcon style={{color:"grey"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />
                             <h6 style={{color:"grey"}}> פייסבוק</h6>
