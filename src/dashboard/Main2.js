@@ -35,7 +35,7 @@ export default function Main2(props) {
     }
 
     return (
-        <div  >
+        <div  className="Home">
 
                    
             {/**this is the description part */}
@@ -94,7 +94,7 @@ export default function Main2(props) {
 
 
                <MobileView>
-                            <img src={require("../images/Pagem2.png").default} alt="orta1lm" style={{width :"105%",position:"static",left:0,right:0,top:"0"}} />
+                            <img src={require("../images/Pagem2.png").default} alt="orta1lm" style={{width :"105%",position:"static",left:0,right:0,top:"-10%"}} />
                             <li className="list-inline-item " style={{position:"absolute",top:"15%",left:0,right:0,}}>
                                
                                 <MDBIcon style={{color:"grey"}} fab icon="facebook" onClick={() => openInNewTab('https://www.facebook.com/profile.php?id=100063655145597')} />

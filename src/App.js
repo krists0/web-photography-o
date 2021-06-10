@@ -1,13 +1,15 @@
 
 import './App.css';
 
-import HomeP2 from "./dashboard/HomeP2";
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routers from "./Routers";
 function App() {
   return (
-    <div className="App">
-      <HomeP2></HomeP2>
-     
-    </div>
+    <Router>
+        <div className="App">
+        <Routers/>
+        </div>
+    </Router>
   );
 }
 

@@ -36,7 +36,7 @@ function MadeWithLove() {
     if (newWindow) newWindow.opener = null
   }
   return (
-    <div style={{position:"flex"}}>
+    <div className="Contactme" style={{position:"flex"}}>
     
         <MDBCard style={{ width: "100%",backgroundImage:`url(${back})` ,top:"3%",position:"absolute"}}>
           <MDBRow>

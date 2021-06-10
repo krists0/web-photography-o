@@ -25,7 +25,7 @@ export default function ContactUs() {
   return (
     
      
-        <MDBCard style={{position:"fixed",top:"50px",right:0,left:0, width:"100%",height:700,backgroundImage:`url(${back})`,backgroundPosition:"cover",backgroundSize:"100%"}}>
+        <MDBCard className="Contact" style={{position:"fixed",top:"50px",right:0,left:0, width:"100%",height:700,backgroundImage:`url(${back})`,backgroundPosition:"cover",backgroundSize:"100%"}}>
           <MDBRow>
              <MDBCol lg="4" >
               <MDBCardBody className="contact text-right h-100 grey-text "

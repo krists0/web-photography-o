@@ -49,7 +49,7 @@ class Galery extends Component {
     render() {
         return (
           
-          <div>
+          <div >
 
             <div>
             <Glitch/>
