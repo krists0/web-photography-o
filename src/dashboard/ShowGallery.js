@@ -10,7 +10,7 @@ class ShowGallery extends Component {
  
     return (
       <div className="Gallery">
-        <Glitch></Glitch>
+       
         <Gallery photos={photos}  />
        
       </div>
