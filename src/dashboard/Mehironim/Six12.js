@@ -77,7 +77,7 @@ export default function Six12() {
                       <span >
                         <h4
                           style={{
-                            bottom: -22,
+                            bottom: -24,
                             left: 0,
                             right: 0,
                             position: 'absolute',

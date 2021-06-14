@@ -29,21 +29,22 @@ class MehironDialog2 extends React.Component {
   
    <Heraion>
               </Heraion>
-   
+   <br/>
   
    <Newnornm></Newnornm>
-  
+   <br/>
    <TreeSix></TreeSix>
-   
+   <br/>
    <Six12></Six12>
-  <One>
+   <br/>
+  <One></One>
+  <br/>
 
-  </One>
-  <Family>
-
-  </Family>
+  <Family> </Family>
+  <br/>
 
 <Mitsva></Mitsva>
+<br/>
 <CardActions>
 
 <DialogconMobile></DialogconMobile>
