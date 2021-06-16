@@ -53,7 +53,10 @@ class Galery extends Component {
 
             <div>
             <Glitch/>
-             <ShowGallery></ShowGallery>
+            {/**
+             * <ShowGallery></ShowGallery>
+             
+             */}
              
             </div>
 

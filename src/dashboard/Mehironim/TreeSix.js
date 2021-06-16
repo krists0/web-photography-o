@@ -75,7 +75,7 @@ export default function TreeSix() {
               }}  onClick={handleClickOpen}>
     
     <div>
-
+//
 <img src={require(`../../images/three.jpg`).default}
   style={mehironOut}
   alt="2" />
