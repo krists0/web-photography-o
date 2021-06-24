@@ -1,27 +1,31 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer, MDBRow, MDBCol } from
 "mdbreact";
-import ariel from "../images/ariel.jpg";
+
 import sm1 from"../images/2.jpg";
-import sm2 from"../images/1.jpg";
-import fam from "../images/family.jpg";
-import el from "../images/elon.jpg";
-import el2 from "../images/elon2.jpg";
-import bmad from "../images/newborn1.jpg";
-import pmad from "../images/IMG-9332.jpg";
-import child from "../images/six.jpg";
-import mit3 from "../images/mitsva3.jpg";
+
 import ms from "../images/shana.jpg";
-import el3 from "../images/er.jpg";
-import new2 from "../images/newborn2.jpg";
-import child1 from "../images/child1.jpg";
-import child2 from "../images/child2.jpg";
-import child3 from "../images/child3.jpg";
+
 import smash2 from "../images/smash2.jpg";
 import smash3 from "../images/smash3.jpg";
-import family2 from "../images/family2.jpg";
-import family3 from "../images/family3.jpg";
-import family4 from "../images/family4.jpg";
+
+import nb1 from "../nbimages/nb1.jpg";
+import nb2 from "../nbimages/nb2.jpg";
+import nb3 from "../nbimages/nb3.jpg";
+import nb4 from "../nbimages/nb4.jpg";
+import nb5 from "../nbimages/nb5.jpg";
+import nb6 from "../nbimages/nb6.jpg";
+import nb7 from "../nbimages/nb7.jpg";
+import pr1 from "../primages/pr1.jpg";
+import pr2 from "../primages/pr2.jpg";
+import pr3 from "../primages/pr3.jpg";
+import pr4 from "../primages/pr4.jpg";
+import fk1 from "../fkimages/fk1.jpg";
+import fk2 from "../fkimages/fk2.jpg";
+import fk3 from "../fkimages/fk3.jpg";
+import fk4 from "../fkimages/fk4.jpg";
+import fk5 from "../fkimages/fk5.jpg";
+import fk6 from "../fkimages/fk6.jpg";
 const CarouselPage2 = () => {
   return (
     <MDBContainer>
@@ -31,7 +35,7 @@ const CarouselPage2 = () => {
             <MDBCarousel
                 style={{maxWidth:"100%"}}
                 activeItem={1}
-                length={5}
+                length={7}
                 showControls={true}
                 showIndicators={true}
                 
@@ -42,7 +46,7 @@ const CarouselPage2 = () => {
                     <img
                      width="193" height="200"
                         className="d-block w-100"
-                        src={el}
+                        src={nb1}
                         alt="First slide"
                     />
                     </MDBView>
@@ -52,7 +56,7 @@ const CarouselPage2 = () => {
                     <img
                    width="193" height="200"
                         className="d-block w-100"
-                        src={el3}
+                        src={nb2}
                         alt="Second slide"
                     />
                     </MDBView>
@@ -62,7 +66,7 @@ const CarouselPage2 = () => {
                     <img
                     width="193" height="200"
                         className="d-block w-100"
-                        src={el2}
+                        src={nb3}
                         alt="three slide"
                     />
                     </MDBView>
@@ -72,7 +76,7 @@ const CarouselPage2 = () => {
                     <img
                     width="193" height="200"
                         className="d-block w-100"
-                        src={bmad}
+                        src={nb4}
                         alt="four slide"
                     />
                     </MDBView>
@@ -82,15 +86,35 @@ const CarouselPage2 = () => {
                     <img
                     width="193" height="200"
                         className="d-block w-100"
-                        src={new2}
+                        src={nb5}
                         alt="five slide"
+                    />
+                    </MDBView>
+                </MDBCarouselItem>
+                <MDBCarouselItem itemId="6">
+                    <MDBView>
+                    <img
+                    width="193" height="200"
+                        className="d-block w-100"
+                        src={nb6}
+                        alt="six slide"
+                    />
+                    </MDBView>
+                </MDBCarouselItem>
+                <MDBCarouselItem itemId="7">
+                    <MDBView>
+                    <img
+                    width="193" height="200"
+                        className="d-block w-100"
+                        src={nb7}
+                        alt="seven slide"
                     />
                     </MDBView>
                 </MDBCarouselItem>
                 </MDBCarouselInner>
              </MDBCarousel>
       </MDBCol>
-            <MDBCol><h5 style={{textAlign:"right",color:"#b2a57d"}}>ילדים</h5>
+            <MDBCol><h5 style={{textAlign:"right",color:"#b2a57d"}}> ילדים ומשפחה</h5>
         <MDBCarousel
             activeItem={1}
             length={6}
@@ -104,7 +128,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={pmad}
+                    src={fk1}
                     alt="First slide"
                 />
                 </MDBView>
@@ -114,7 +138,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={sm2}
+                    src={fk2}
                     alt="Second slide"
                 />
                 </MDBView>
@@ -124,7 +148,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={ariel}
+                    src={fk3}
                     alt="Second slide"
                 />
                 </MDBView>
@@ -134,7 +158,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={child1}
+                    src={fk4}
                     alt="Third slide"
                 />
                 </MDBView>
@@ -144,7 +168,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={child2}
+                    src={fk5}
                     alt="Third slide"
                 />
                 </MDBView>
@@ -154,7 +178,7 @@ const CarouselPage2 = () => {
                 <img
                  width="193" height="200"
                     className="d-block w-100"
-                    src={child3}
+                    src={fk6}
                     alt="Third slide"
                 />
                 </MDBView>
@@ -213,7 +237,7 @@ const CarouselPage2 = () => {
             
             </MDBCarouselInner>
         </MDBCarousel></MDBCol>
-            <MDBCol><h5 style={{textAlign:"right",color:"#b2a57d"}}>משפחה</h5>
+            <MDBCol><h5 style={{textAlign:"right",color:"#b2a57d"}}>הריון</h5>
         <MDBCarousel
             activeItem={1}
             length={4}
@@ -223,46 +247,46 @@ const CarouselPage2 = () => {
         >
             <MDBCarouselInner>
             <MDBCarouselItem itemId="1">
-                <MDBView>
-                <img
-                 width="193" height="200"
-                    className="d-block w-100"
-                    src={fam}
-                    alt="First slide"
-                />
-                </MDBView>
-            </MDBCarouselItem>
-            
-            <MDBCarouselItem itemId="3">
-                <MDBView>
-                <img
-                 width="193" height="200"
-                    className="d-block w-100"
-                    src={family2}
-                    alt="First slide"
-                />
-                </MDBView>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="4">
-                <MDBView>
-                <img
-                 width="193" height="200"
-                    className="d-block w-100"
-                    src={family3}
-                    alt="First slide"
-                />
-                </MDBView>
-            </MDBCarouselItem>
-             <MDBCarouselItem itemId="2">
-                <MDBView>
-                <img
-                 width="193" height="200"
-                    className="d-block w-100"
-                    src={family4}
-                    alt="First slide"
-                />
-                </MDBView>
-            </MDBCarouselItem>
+                      <MDBView>
+                      <img
+                        width="193" height="200"
+                          className="d-block w-100"
+                          src={pr1}
+                          alt="First slide"
+                        
+                      />
+                      </MDBView>
+           </MDBCarouselItem>
+            <MDBCarouselItem itemId="2">
+                      <MDBView>
+                      <img
+                     width="193" height="200"
+                          className="d-block w-100"
+                          src={pr2}
+                          alt="Second slide"
+                      />
+                      </MDBView>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="3">
+                      <MDBView>
+                      <img
+                       width="193" height="200"
+                          className="d-block w-100"
+                          src={pr3}
+                          alt="three slide"
+                      />
+                      </MDBView>
+                  </MDBCarouselItem>
+                  <MDBCarouselItem itemId="4">
+                      <MDBView>
+                      <img
+                      width="193" height="200"
+                          className="d-block w-100"
+                          src={pr4}
+                          alt="three slide"
+                      />
+                      </MDBView>
+                  </MDBCarouselItem>
             
             </MDBCarouselInner>
         </MDBCarousel></MDBCol>

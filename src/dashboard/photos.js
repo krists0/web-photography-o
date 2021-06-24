@@ -1,5 +1,45 @@
 export const photos = [
     {
+    src: require(`../glimages/gal1.jpg`).default,
+    width: 3,
+    height: 2
+  },
+  {
+    src: require(`../glimages/gal2.jpg`).default,
+    width: 4,
+    height: 4
+  },
+  {
+    src: require(`../glimages/gal3.jpg`).default,
+    width: 4,
+    height: 2
+  },
+  {
+    src: require(`../glimages/gal4.jpg`).default,
+    width: 6,
+    height: 3
+  },
+  {
+    src:  require(`../glimages/gal5.jpg`).default,
+    width: 4,
+    height: 3,
+    
+  },
+  
+  {
+    src: require(`../glimages/gal6.jpg`).default,
+    width: 5,
+    height: 4
+  },
+  
+ 
+
+];
+
+
+/**
+ * export const photos = [
+    {
     src: require(`../images/child1.jpg`).default,
     width: 4,
     height: 3
@@ -98,3 +138,4 @@ export const photos = [
  
 
 ];
+ */

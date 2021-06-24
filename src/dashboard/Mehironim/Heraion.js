@@ -72,7 +72,7 @@ export default function Heraion() {
               
               }}  onClick={handleClickOpen}>
          <div> 
-                      <img alt="heraion1" src={require(`../../images/preg.jpg`).default}
+                      <img alt="heraion1" src={require(`../../primages/pr1.jpg`).default}
                       style={mehironOut}  />
                       <span >
                         <h4
@@ -107,7 +107,7 @@ export default function Heraion() {
                   <CardActionArea
                       style={mehiromInCard}
                   >
-                      <img alt="herion" src={require(`../../images/preg.jpg`).default} width="100%" />
+                      <img alt="herion" src={require(`../../primages/pr2.jpg`).default} width="100%" />
 
                    <CardContent>
 
