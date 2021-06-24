@@ -11,13 +11,13 @@ export const photos = [
   },
   {
     src: require(`../glimages/gal3.jpg`).default,
-    width: 4,
+    width: 3,
     height: 2
   },
   {
     src: require(`../glimages/gal4.jpg`).default,
-    width: 6,
-    height: 3
+    width: 3,
+    height: 2
   },
   {
     src:  require(`../glimages/gal5.jpg`).default,
@@ -31,7 +31,16 @@ export const photos = [
     width: 5,
     height: 4
   },
-  
+  {
+    src: require(`../glimages/gal7.jpg`).default,
+    width: 5,
+    height: 4
+  },
+  {
+    src: require(`../glimages/gal8.jpg`).default,
+    width: 5,
+    height: 4
+  },
  
 
 ];
