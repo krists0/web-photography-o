@@ -11,7 +11,7 @@ export default function ContactUsMobile() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_sxhr38i', 'template_jmrdnje', e.target, 'user_UGrz3kG3bSAIw0fzs1CM1')
+    emailjs.sendForm('', 'template_jmrdnje', e.target, '')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
