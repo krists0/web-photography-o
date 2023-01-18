@@ -66,21 +66,3 @@ class MehironDialog2 extends React.Component {
 
 export default MehironDialog2;
 
-/**
- * <Grid style={{width:"100%",position :"absolute",top:"26%",height:"1200px"}}>
-  
-    <Box display="flex" justifyContent="center" m={1} p={1} >
-        <Box p={6} >
-        <One></One>
-        </Box>
-        <Box p={6} >
-        <Family></Family>
-        </Box>
-        <Box p={6}>
-        <Mitsva></Mitsva>
-        </Box>
-       
-  
-  </Box>
-  </Grid>
- */
