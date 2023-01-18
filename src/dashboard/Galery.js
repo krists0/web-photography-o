@@ -74,26 +74,3 @@ class Galery extends Component {
 
 
 export default Galery;
-
-/**
- * 
- * 
- *   <div>
-                <h1>
-                    Galery
-                    <ImageUpload/>
-                    jlkjkljlkjlk
-                 <galleryhome/>
-                 
-                </h1>
-            </div>
- */
-
- /**
-  *  {
-              
-              pics.map((i)=>
-              <img src={`data:image/jpeg;base64,${i.img.data}`} />
-              )
-            }
-  */
